@@ -1,4 +1,4 @@
-/*
+/*//////////////////////////////// FINISHED //////////////////////////////////
 ASSIGNMENT RULES
 - All the answers must be in JavaScript
 - The solution must be pushed to the repository and be available for the tutors by the end of the day
