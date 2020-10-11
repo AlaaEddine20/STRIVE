@@ -84,9 +84,7 @@ Insert a value in a variable based on the result of a ternary if
 */
 
 /* WRITE YOUR CODE HERE */
-if (hungry = true){
-    return "eat";
-}
+
 
 /* WHEN YOU ARE FINISHED
 Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
