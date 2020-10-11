@@ -1,4 +1,4 @@
-/*
+/* //////////////////////// FINISHED 
 ASSIGNMENT RULES
 - All the answers must be in JavaScript
 - You can google / use StackOverflow BUT we suggest you to use just the material provided
