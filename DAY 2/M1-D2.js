@@ -10,7 +10,7 @@ ASSIGNMENT RULES
 /* EXERCISE 1
 Write the code to execute a SUM between the number 12 and 20
 */
-
+////////////////////////////////////
 /* WRITE YOUR CODE HERE */
 console.log(12 + 20);
 /* EXERCISE 2
