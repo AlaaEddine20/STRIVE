@@ -80,12 +80,12 @@ console.log(Me)
     Write the function Dice that randomize an integer number between 1 and 6
 */
 /**************************DONE**************************/
-/*
+
 function Dice(n){
   return Math.floor(Math.random() * 6) + 1
 }
 console.log(Dice())
-*/
+
 /* Ex.2 
     Write the function WhoIsBigger that receives 2 numbers and returns the bigger of the 2
 */
@@ -142,13 +142,13 @@ console.log(OnlyLetters("i love 123 whatever"))
 /**************************DONE**************************/
 /*
 function IsThisAnEmail(string){
-  if (string.includes("@")){
+  if (string.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)){
     return "Email submitted";
   } else {
     return "Insert a valid email";
   }
 };
-console.log(IsThisAnEmail("merdaemail.it"))
+console.log(IsThisAnEmail("merda@email.it"))
 */
 /* Ex.7
    Write the function WhatDayIsIt that should return the day of the week
@@ -171,29 +171,43 @@ console.log(WhatDayIsIt());
         values: [ 3, 3, 4]
     }
 */
-/*
-function RollTheDices(num){  // ASK THE TUTOR WHAT IT ASKS
-   
+
+function rollTheDices(num){  
+   let sum = 0;
+   let values = [];
+   for (let i = 0; i < num; i++){
+     values.push(Dice())
+   }
+   for (let i = 0; i < values.length; i++){
+     sum += values[i]  
+   }
+   return {
+     sum: sum, 
+     values: values
+   }
 };
-*/
+console.log(rollTheDices(10))
 /* Ex.9
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
-//let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday"];
-//let date = new Date("09/30/2020");
-/*
-let daysPassed = Date.parse("10/04/2020");
-function howManyDays(daysPassed){
-    return daysPassed 
+/* 
+function howManyDays (year, month, day) {
+  let otherDate = new Date(year, month, day); // Creo una nuova data 
+  let today = new Date(); // Creo una nuova data e la assegno alla variabile 
+  otherDate = otherDate.getTime(); // Converto in millisecondi la mia data 
+  today = today.getTime();
+  let difference = today - otherDate;
+  return difference / (3600 * 24 * 1000);
 }
-console.log(howManyDays(daysPassed))
+
+console.log(howManyDays(2020, 8, 15))
 */
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
 */
 /*
-function IsTodayMyBDay(myBDay){
-  if (myBDay.match("22/02/1991")){
+function IsTodayMyBDay(date){
+  if (date === "22/02/1991"){
     return true;
   } else {
     return false;
