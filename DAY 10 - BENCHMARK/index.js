@@ -121,3 +121,10 @@ function changeLinkBackground(){
     links.style.background = 'red';
 }
 */
+/*
+window.onload = function (){
+    console.log("Page")
+}
+*/
+
+
