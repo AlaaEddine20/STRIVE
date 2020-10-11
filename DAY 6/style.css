@@ -1,45 +1,58 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    margin-top: 50px;
+.Header {
+  width: 300px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .links {
-    display:block;
-    text-decoration:none;
-    margin-top: 20px;
-    text-align: center;
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
 }
 
 td {
-    padding: 20px;
+  padding: 20px;
 }
 
 .Images {
-    width: 200px;
-    height: 220px;
+  width: 200px;
+  height: 220px;
 }
 
-table{
-    margin: 80px auto;
+table {
+  margin: 80px auto;
 }
 
-#myMap{
-    width: 550px;]
-    height: 400px;
-    display: block;
-    margin: 50px auto;
+#myMap {
+  width: 550px;
+  height: 400px;
+  display: block;
+  margin-top: -140px;
+  margin-left: 400px;
 }
 
-.infos{
-    padding: 20px 80px 0 0;
-    margin-left: 70px;
-    font-weight: bolder;
+.infos {
+  padding: 20px 80px 0 0;
+  margin-left: 70px;
+  font-weight: bolder;
 }
 
-footer{
-    padding-top: 50px;
+footer {
+  padding-top: 50px;
 }
+
+textarea {
+  display: block;
+  margin-left: 1200px;
+  margin-top: 0px;
+  margin-bottom: -110px;
+}
+
+p 
