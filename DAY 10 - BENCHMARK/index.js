@@ -109,3 +109,15 @@ function addRow() {
     table.appendChild.tr
 }
 */
+/*
+function createClass(){
+    document.querySelectorAll('tr').className += 'new class';
+    
+}
+*/
+/*
+function changeLinkBackground(){
+    let links = document.querySelectorAll('a');
+    links.style.background = 'red';
+}
+*/
