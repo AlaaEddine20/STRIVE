@@ -16,19 +16,19 @@ console.log(12 + 20);
 /* EXERCISE 2
 Create a variable named x containing the number 12
 */
-
+/**************************DONE ***************************/
 /* WRITE YOUR CODE HERE */
 let X = 12;
 /* EXERCISE 3
 Create a variable named name containing the string John Doe
 */
-
+/**************************DONE ***************************/
 /* WRITE YOUR CODE HERE */
 let name = 'John Doe';
 /* EXERCISE 4
 Execute a DIFFERENCE between the number 12 and the variable x, which stores the value 12
 */
-
+/**************************DONE ***************************/
 /* WRITE YOUR CODE HERE */
 console.log(12 - X);
 /* EXERCISE 5
@@ -36,16 +36,23 @@ Create two variables: name1 and name 2. name1 is equal to john, name2 is equal t
 Verify that name1 is different from name2. 
 Verify then, that name1 and name2 are equals if both lowercase (without changing the value of name2)
 */
-
+/**************************DONE ***************************/
 /* WRITE YOUR CODE HERE */
 let name1 = 'john';
 let name2 = 'John';
 console.log(name1 !== name2);
-console.log(name2.toLowerCase === name1);
+function find(a, b) {
+    if (a.toLowerCase() === b.toLowerCase()){
+    return "Strings are equals";    
+} else {
+    return "Strings are not equals";
+}
+}
+console.log(find(name1,name2))
 /* EXERCISE 6
 Create the variable x (value less than 10). Write the code to print the literal value of the given number (ex.: 1 => one, 5 => five)
 */
-
+/**************************DONE ***************************/
 /* WRITE YOUR CODE HERE */
 let x = 9;
 if (x === 0) {
@@ -77,7 +84,9 @@ Insert a value in a variable based on the result of a ternary if
 */
 
 /* WRITE YOUR CODE HERE */
-
+if (hungry = true){
+    return "eat";
+}
 
 /* WHEN YOU ARE FINISHED
 Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
