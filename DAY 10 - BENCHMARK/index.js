@@ -106,7 +106,7 @@ function addRow() {
     table.getElementsByTagName('table');
     let extraTr = document.createElement('tr');
     extraTr.getElementsByTagName('tr');
-    table.appendChild.tr
+    table.appendChild(extraTr)
 }
 */
 /*
@@ -126,5 +126,12 @@ window.onload = function (){
     console.log("Page")
 }
 */
+/*
+function newItems(){
+    let ul = document.getElementsByTagName('ul');
+    let li = document.createElement("li");
 
-
+    ul.appendChild(li)
+}
+console.log(newItems())
+*/
