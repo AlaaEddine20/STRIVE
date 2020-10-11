@@ -84,7 +84,7 @@ document.getElementsByTagName('td');
 //Create a cycle that prints the text inside every td of the page
 /*
 function tds(){
-for (k=0; k<th.length; k++) {
+for (i=0; i<th.length; i++) {
     let td = document.createElement('td');
     document.getElementsByTagName("td");
     td.innerText = "ciao";
@@ -92,6 +92,7 @@ for (k=0; k<th.length; k++) {
 }
 };
 */
+
 //Write a function to change the heading of the page
 /*
 function changeHeader() {
