@@ -129,15 +129,15 @@ function changeLinkBackground(){
 */
 /*
 window.onload = function (){
-    console.log("Page")
+    console.log("Page Loaded")
 }
 */
 /*
-function newItems(){
-    let ul = document.getElementsByTagName('ul');
-    let li = document.createElement("li");
-
-    ul.appendChild(li)
+const addItemsToUl = function (){
+    let myUl = document.getElementsByTagName('ul');
+    let newLi = document.createElement("li");
+    newLi.innerText = 'this text will be the same for all elements created'
+    myUl.appendChild(newLi)
 }
-console.log(newItems())
+
 */
