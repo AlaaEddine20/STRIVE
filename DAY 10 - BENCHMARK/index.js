@@ -139,5 +139,10 @@ const addItemsToUl = function (){
     newLi.innerText = 'this text will be the same for all elements created'
     myUl.appendChild(newLi)
 }
-
+*/
+/*
+const emptyList = function(){
+    let listToEmpty = document.querySelector('ul') // or by tag name
+    listToEmpty.innerHTML = ''; // the result will be <ul></ul> with nothing inside
+}
 */
