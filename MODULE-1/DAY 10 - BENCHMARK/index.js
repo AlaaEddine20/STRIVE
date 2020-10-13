@@ -53,46 +53,45 @@ console.log(arrOfArr)
 function longestArr() {
    const arrOne = ['i', 'am', 'first', 'array'];
    const arrTwo = ['i', 'am', 'second', 'array'];
-   if (arrOne.length > arrTwo.length){
+   if (arrOne > arrTwo){
        return arrOne;
    } else {
        return arrTwo;
    }
-}
+};
 console.log(longestArr())
 */
 /*
-function higherValue(arr1, arr2) {
-    let sum1 = 0;
-    let sum2 = 0;
-    for (let z = 0; z <arr1.length; z++){
-        sum1 += sum1 + arr1[z]
-    }
-
-    for (let y = 0; y < arr2.length; y++){
-        sum2 += sum2 + arr2[y]
-    }
-    return sum1 > sum2  ? arr1 : arr2// Same as if(sum1 > sum2){return sum1} else {return sum2}
+function higherValue() {
+    const arrSum1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+    const arrSum2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l'];
+      for (z=0; z<arrSum1.length; z++) {
+          if (arrSum1.length > arrSum2.length){
+              return arrSum1;
+          } else {
+              return arrSum2 ;
+          }
+      }
 }
-console.log(higherValue([1,2], [1,3]))
+console.log(higherValue());
 */
 
 /******************************DOM******************************/
 //Get element with ID "container" from the page
-//document.getElementById('container');
+document.getElementById('container');
 //Get every "td" from the page
-//document.getElementsByTagName('td');// faster
-//document.querySelectorAll('td); //Newer syntax
+document.getElementsByTagName('td');
 //Create a cycle that prints the text inside every td of the page
 /*
-function newTds(){
-let tds = document,getElementsByTagName('td')
-for (i=0; i<tds.length; i++) {
-    tds.innerText[i] = "ciao";
+function tds(){
+for (k=0; k<th.length; k++) {
+    let td = document.createElement('td');
+    document.getElementsByTagName("td");
+    td.innerText = "ciao";
+    th.appenChild(td);
 }
 };
 */
-
 //Write a function to change the heading of the page
 /*
 function changeHeader() {
@@ -101,48 +100,11 @@ function changeHeader() {
 */
 //Write a function to add an extra row to the table
 /*
-const addRow = function () {
-    let newRow = document.createElement('tr');
-    for (let x = 0; x<5; x++){
-        let newCell = document.createElement('td')
-        newCell.innerText = x + 1; // <td>1</td> ---> <td>2</td> e così via..
-        newRow.appendChild(newCell) // <tr><td>1</td></tr> ---> <tr><td>2</td></tr>
-    }
-    let table = document.querySelector('table') // finds the first table
-    table.appendChild(newRow)
-}
-console.log(addRow())
-*/
-/*
-const assTestClass = function(){
-    let allRows = document.getElementsByTagName('tr')
-    for (let i = 0; i < allRows.length; i++){
-        allRows[i].classList.add('test')
-    }
-}
-*/
-/*
-function changeLinkBackground(){
-    let links = document.querySelectorAll('a'); // DO IT WITH LOOPS
-    links.style.background = 'red';
-}
-*/
-/*
-window.onload = function (){
-    console.log("Page Loaded")
-}
-*/
-/*
-const addItemsToUl = function (){
-    let myUl = document.getElementsByTagName('ul');
-    let newLi = document.createElement("li");
-    newLi.innerText = 'this text will be the same for all elements created'
-    myUl.appendChild(newLi)
-}
-*/
-/*
-const emptyList = function(){
-    let listToEmpty = document.querySelector('ul') // or by tag name
-    listToEmpty.innerHTML = ''; // the result will be <ul></ul> with nothing inside
+function addRow() {
+    let table = document.createElement('table');
+    table.getElementsByTagName('table');
+    let extraTr = document.createElement('tr');
+    extraTr.getElementsByTagName('tr');
+    table.appendChild.tr
 }
 */

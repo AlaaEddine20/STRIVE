@@ -27,16 +27,11 @@
     <p>
       <input
         type="button"
-        onclick="populateTable()"
+        onclick="randomNumbers()"
         value="Click here to create a new card"
       />
     </p>
     <script>
-      window.addEventListener("load", createTable);
-      const button = document.getElementById("button");
-
-      button.onclick = populateTable;
-      const numbersArr = [];
       const createTable = function () {
         let table = document.getElementById("main-table");
         let tbody = document.querySelector("tbody");
@@ -47,27 +42,11 @@
           tbody.appendChild(tr);
           for (let k = 1; k < elementiPerRiga; k++) {
             let td = document.createElement("td");
+            td.innerText = Math.floor(Math.random() * 76); //i * elementiPerRiga + k + 1;
             tr.appendChild(td);
-            td.classList("cell");
           }
         }
       };
-
-      function populateTable() {
-        const cells = document.getElementsByClassName("cell");
-        //for (let i = 0, i< cells.length; i++)
-        for (let cell of cells) {
-          let newNum = generateRandom();
-          while (numbersArr.includes(newNum)) newNum = generateRandom();
-          cell.innerText = newNum;
-        }
-        console.log(cells);
-      }
-
-      function generateRandom() {
-        return Math.floor(Math.random() * 76);
-      }
-
       // CHIEDI AL PROF
       /*
       const randomNumbers = function () {
