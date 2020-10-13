@@ -1,5 +1,4 @@
 #nav {
-  margin-left: 28rem;
   margin-top: 10rem;
 }
 #nav a {
@@ -39,9 +38,10 @@
 #titles {
   font-family: "Sansita Swashed", cursive;
   color: #55dde0;
-  opacity: 9;
   font-size: 1.7rem;
   font-weight: bolder;
+  padding-left: 5rem;
+  padding-left: 5rem;
 }
 
 a {
@@ -50,7 +50,8 @@ a {
 
 .list-unstyled {
   margin-top: 10rem;
-  opacity: 0.7;
+  margin-left: 10rem;
+  opacity: 0.8;
 }
 
 #cover-meteora {
@@ -66,7 +67,9 @@ a {
 .description {
   font-family: "Oswald", sans-serif;
   color: azure;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 #cover-show {
