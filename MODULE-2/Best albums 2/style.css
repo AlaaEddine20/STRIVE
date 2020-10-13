@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(to bottom right, #18beb9, #c04cfd);
+  height: 100vh;
+}
+
+.nav-link {
+  color: #feffff;
+  font-weight: bolder;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 1.5rem;
+  padding-top: 5rem;
+}
+
+.nav-link:hover {
+  color: darkmagenta;
+}
+
+#header h1 {
+  font-family: "Sansita Swashed", cursive;
+  color: darkmagenta;
+  font-size: 5rem;
+  margin-top: 8rem;
+  opacity: 0.5;
+  text-align: center;
+}
+#albums {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.image {
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
+.titles {
+  color: #49cbf1;
+}
