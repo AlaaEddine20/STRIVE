@@ -176,10 +176,10 @@ console.log(howManyDays())
 */
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
-*/
+*////////////////////////////////////////////////////DONE////////////////////////////////////////////////////////
 /*
-function IsTodayMyBDay(myBDay){
-  if (myBDay.match("22/02/1991")){
+function IsTodayMyBDay(Day){
+  if (Day.match("22/02/1991")){
     return true;
   } else {
     return false;
