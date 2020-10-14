@@ -25,13 +25,7 @@
         <td>
           <img class="Images" src="./images/GoT.jpg" alt="" />
           <div>
-            <p>
-              Most appreciated game from japan and anime lovers. The story, the
-              gameplay and the amazing graphics will take you to the 12th
-              century Japan when the Mongonlians attacked the Isle of Tsushima.
-              Will Jin help his own land and his people from the ferocious
-              Mongolians?
-            </p>
+            <p>Most appreciated game <br />from Japan and anime lovers.</p>
           </div>
 
           <a
@@ -70,7 +64,9 @@
         </td>
       </tr>
     </table>
+
     <textarea name="Get in touch" id="" cols="40" rows="10"></textarea>
+
     <div id="myMap">
       <iframe
         frameborder="2"
@@ -94,9 +90,11 @@
         ><span class="infos">Game deals</span>
       </footer>
     </div>
+
     <h2 id="listTitle">Todo List</h2>
+    <button onclick="firstUlDisappear()">Make first list disappear!</button>
     <ul id="firstList">
-      <li><p>1st</p></li>
+      <li>1st</li>
       <li>2nd</li>
       <li>3rd</li>
     </ul>
@@ -145,9 +143,36 @@
       const changePContent = function () {
         let allThePs = document.querySelectorAll("div p");
         for (let x = 0; x < allThePs.length; x++) {
-          allThePs[x].innerText = "NUOVO TESTO";
+          allThePs[x].innerText = "NEW PARAGRAPH";
           // let array = ['alan','stefano','riccardo'];
           // array[1]
+        }
+      };
+
+      const changeListTitle = function () {
+        let newListTitle = document.getElementById("listTitle");
+        newListTitle.innerHTML = "List title changed!";
+      };
+
+      const addToTheSecond = function () {
+        let newItem = document.createElement("LI");
+        newItem.innerText = "NEW ITEM";
+        document.getElementById("secondList").appendChild(newItem);
+      };
+
+      const firstUlDisappear = function () {
+        let x = document.getElementById("firstList");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      };
+
+      const paintItGreen = function () {
+        let x = document.querySelectorAll("ul");
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.background = "green";
         }
       };
 
@@ -157,9 +182,11 @@
         removeClassFromTitle();
         changeBackgroundColor();
         changeFooter();
+        changePContent();
+        changeListTitle();
+        addToTheSecond();
+        paintItGreen();
       };
-
-      const changePContent = function () {};
     </script>
   </body>
 </html>
