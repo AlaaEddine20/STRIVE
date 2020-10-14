@@ -192,7 +192,7 @@ console.log(IsTodayMyBDay("22/02/1991"))
 
 /* Ex.11
    Write the function DeleteProp that receives an object and a string, and returns the object after deleting the property with that given name
-*/
+*////////////////////////////////////////////////////DONE////////////////////////////////////////////////////////
 /*
 let myStr = "myStr";
 
