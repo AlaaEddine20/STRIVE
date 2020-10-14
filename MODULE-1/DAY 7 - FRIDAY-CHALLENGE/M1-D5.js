@@ -211,12 +211,7 @@ console.log(DeleteProp(myStr))
 */
 /*
 function olderMovie(){
-  for (i = 0; i < movies.year.length; i++) {
-    return movies
-  }
 }
-console.log(movies[i])
-*/
 /* Ex.13
     Write the function CountMovies that returns the number of movies into the array
 */
@@ -233,7 +228,6 @@ function countMovies(movies) {
 
 console.log(countMovies(movies))
 */
-
 /* Ex.14
     Write the function OnlyTitles that creates an array with only the titles of the movies
 */
