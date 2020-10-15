@@ -287,11 +287,11 @@ function onlyThisMillenium(){
   
   /* Ex.20
      Write the function DeleteX that receives a number and returns an array without the element in that position
-  */
+  *///////////////// DA FINIRE ///////////////////
   /*
-  let arr = ["one", "two", "three"]
+  let arr = [1, 2, 3]
   function deleteX () {
-    return [arr.slice([1])]
+    return [arr.slice([3])]
   }
   console.log(deleteX())
   */
