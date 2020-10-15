@@ -236,19 +236,8 @@ console.log(movies[i])
 /* Ex.13
     Write the function CountMovies that returns the number of movies into the array
 */
-/*
-function countMovies(movies) {
-  let length = 0;
-  for( let num in movies ) {
-      if( movies.hasOwnProperty(num) ) {
-          ++length;
-      }
-  }
-  return length;
-};
 
-console.log(countMovies(movies))
-*/
+
 
 /* Ex.14
     Write the function OnlyTitles that creates an array with only the titles of the movies
@@ -328,7 +317,7 @@ function onlyThisMillenium(){
   
   /* Ex.23
     Create a function IsItPrime that receives a number and return true if the number is a prime number
-  */
+  *//**************************DONE**************************/
   /*
   function isItPrime(num) {
      for (let i = 2;  i < num; i++) {
@@ -457,6 +446,14 @@ function onlyThisMillenium(){
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
+  
+  function countMovies() {
+    for(let i = 0; i < movies.length; i++ ) {
+        
+    };
+}   
+  
+  console.log(countMovies())
   
 
   // EX 18
