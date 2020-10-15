@@ -1,15 +1,17 @@
-
+/////////////////////////////////////////DONE///////////////////////////////////////
 //Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
 let x = "John ";
 let y = "Doe";
 //console.log(x + y)
 //Create an object with properties such name, surname, email
+/////////////////////////////////////////DONE///////////////////////////////////////
 const person = {
     name: "John",
     surname: "Doe",
     email: "JD@mail.com",
 }
 //Delete Email from the previously created object
+/////////////////////////////////////////DONE///////////////////////////////////////
 delete person.email
 
 //console.log(person)
@@ -18,15 +20,15 @@ delete person.email
 //const arr = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
 //Print in the console every string in the previous array
 //console.log(arr)
-
+/////////////////////////////////////////DONE///////////////////////////////////////
 //Create an array with 100 random numbers in it
-/*
+/*/////////////////////////////////////////DONE///////////////////////////////////////
 const randomArr = [...Array(100)].map(() => Math.floor(Math.random() * 100))
 innerText = randomArr;
 //console.log(randomArr)
 */
 //Wrote a function to get the MAX and the MIN from the previously created array
-/*
+/*/////////////////////////////////////////DONE///////////////////////////////////////
 function maxMin() {
     let min = Math.min.apply(null, randomArr)
     let max = Math.max.apply(null, randomArr)
@@ -39,7 +41,7 @@ function maxMin() {
 console.log(maxMin());
 */
 //Create an array of arrays, in which every array has 10 random numbers
-/*
+/*/////////////////////////////////////////DONE///////////////////////////////////////
 const arrOfArr = [];
 let currentArr = [];
 for (let y=0; y<10; y++){
@@ -49,11 +51,12 @@ for (let y=0; y<10; y++){
 console.log(arrOfArr)
 */
 //Create a function that gets 2 arrays and returns the longest one
+/*/////////////////////////////////////////DONE///////////////////////////////////////
 /*
 function longestArr() {
    const arrOne = ['i', 'am', 'first', 'array'];
    const arrTwo = ['i', 'am', 'second', 'array'];
-   if (arrOne > arrTwo){
+   if (arrOne.length > arrTwo.length){
        return arrOne;
    } else {
        return arrTwo;
@@ -78,9 +81,9 @@ console.log(higherValue());
 
 /******************************DOM******************************/
 //Get element with ID "container" from the page
-document.getElementById('container');
+//document.getElementById('container');
 //Get every "td" from the page
-document.getElementsByTagName('td');
+//document.getElementsByTagName('td');
 //Create a cycle that prints the text inside every td of the page
 /*
 function tds(){
@@ -108,3 +111,4 @@ function addRow() {
     table.appendChild.tr
 }
 */
+/*/////////////////////////////////////////FINISHED///////////////////////////////////////
