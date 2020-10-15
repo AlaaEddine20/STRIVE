@@ -1,0 +1,5 @@
+let namesArr = [];
+let teams = {};
+
+
+
