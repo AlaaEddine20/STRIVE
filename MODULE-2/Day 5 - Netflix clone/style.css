@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  width: 90px;
+  padding: 0;
+  height: 45px;
+}
+
+#navbar {
+  max-width: 100%;
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.navbar-dark {
+  color: white !important;
+}
+
+.nav-link {
+  color: #ced4da;
+}
+
+.nav-link:hover {
+  color: red;
+  font-weight: 500;
+}
+
+#profile-icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+#profile:hover {
+  -webkit-box-shadow: 1px 1px 9px 9px rgba(255, 0, 0, 0.41);
+  -moz-box-shadow: 1px 1px 9px 9px rgba(255, 0, 0, 0.41);
+  box-shadow: 1px 1px 9px 9px rgba(255, 0, 0, 0.41);
+}
+
+#profile {
+  color: white;
+}
+
+#notify {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+#notify:hover {
+  color: red;
+}
+
+#search-icon {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+#search-icon:hover {
+  color: red;
+}
