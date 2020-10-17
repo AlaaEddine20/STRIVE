@@ -225,14 +225,8 @@ console.log(DeleteProp(myStr))
 /* Ex.12 
     Write the function OlderMovie that finds the older movie in the array
 */
-/*
-function olderMovie(){
-  for (i = 0; i < movies.year.length; i++) {
-    return movies
-  }
-}
-console.log(movies[i])
-*/
+
+
 /* Ex.13
     Write the function CountMovies that returns the number of movies into the array
 *//**************************DONE**************************/
@@ -456,6 +450,21 @@ console.log(getMovieById("tt4154796"))
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
+  ////////////////////////////////// RIPRENDI DA QUI ///////////////////////////
+  function olderMovie(){
+    for (let i = 0; i < movies.length; i++) {
+      function oldest() {
+        for ( let x = 0; x < movies.length; i++) {
+          let years = (parseInt(movies[i].Year))
+          console.log(years) 
+        }
+        
+      }  return oldest()
+
+    }  return Math.min(years)
+  }
+
+  console.log(olderMovie())
 
 
 
