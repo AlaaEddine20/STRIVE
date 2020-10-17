@@ -241,8 +241,17 @@ console.log(movies[i])
 
 /* Ex.14
     Write the function OnlyTitles that creates an array with only the titles of the movies
+*//**************************DONE**************************/
+/*
+function onlyTitles() {
+  let array = [];
+  for (let i = 0; i < movies.length; i++) {
+   array.push(movies[i].Title)
+   
+  } return array
+}
+console.log(onlyTitles())
 */
-
 /* Ex.15
    Write the function OnlyThisMillennium that returns only the movies produced in this millennium
 *//**************************DONE**************************/
@@ -288,14 +297,9 @@ console.log(getMovieById("tt4154796"))
   
   /* Ex.20
      Write the function DeleteX that receives a number and returns an array without the element in that position
-  *///////////////// DA FINIRE ///////////////////
-  /*
-  let arr = [1, 2, 3]
-  function deleteX () {
-    return [arr.slice([3])]
-  }
-  console.log(deleteX())
-  */
+  *///////////////// ASK TUTOR ///////////////////
+
+  
   // JS Advanced
   
   /* Ex.21
@@ -447,6 +451,7 @@ console.log(getMovieById("tt4154796"))
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
+
 
 
 
