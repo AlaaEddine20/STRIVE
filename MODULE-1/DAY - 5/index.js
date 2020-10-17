@@ -235,10 +235,15 @@ console.log(movies[i])
 */
 /* Ex.13
     Write the function CountMovies that returns the number of movies into the array
-*/
-
-
-
+*//**************************DONE**************************/
+/*
+function countMovies() {
+  for (let i = 0; i < movies.length; i++){
+  }
+  return movies.length
+}
+console.log(countMovies())
+*/  
 /* Ex.14
     Write the function OnlyTitles that creates an array with only the titles of the movies
 *//**************************DONE**************************/
@@ -453,17 +458,6 @@ console.log(getMovieById("tt4154796"))
   ];
 
 
-
-
-  /*
-  function countMovies() {
-    for(let i = 0; i < movies.length; i++ ) {
-        
-    };
-}   
-
-console.log(countMovies())
-*/
 
   // EX 18
   /*
