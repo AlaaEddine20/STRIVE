@@ -260,19 +260,20 @@ function onlyThisMillenium(){
   
   /* Ex.16 
       Write the function GetMovieById that receives an ID and returns the movie with the given ID
-  */
-  /*
-  function getMovieById(a){
-    let result = {};
-    for (let i = 0; i < movies.length; i++) {
-     if (a === movies[i].imdbID) {
-        result = movies[i]; 
-        return result
-      } 
-     } 
-  };
-  console.log(getMovieById("tt4154796"))
-  */
+  *//**************************DONE**************************/
+ /*
+ function getMovieById(a){
+  let result = {};
+  for (let i = 0; i < movies.length; i++) {
+   if (a === movies[i].imdbID) {
+      result = movies[i]; 
+      return result
+    } 
+   } 
+};
+console.log(getMovieById("tt4154796"))
+*/
+  
   /* Ex.17
       Write the function SumYears that returns the sum of the years the movie has been produced
   */
@@ -446,15 +447,18 @@ function onlyThisMillenium(){
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
-  
+
+
+
+  /*
   function countMovies() {
     for(let i = 0; i < movies.length; i++ ) {
         
     };
 }   
-  
-  console.log(countMovies())
-  
+
+console.log(countMovies())
+*/
 
   // EX 18
   /*
