@@ -251,7 +251,7 @@ function onlyThisMillenium(){
     for (let i=0; i<movies.length; i++){
       let years = parseInt(movies[i].Year)
       if (years>2000) {
-      console.log(movies[i].Year)
+      console.log(movies[i])
       }
     }
   }
