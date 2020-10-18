@@ -288,8 +288,17 @@ console.log(getMovieById("tt4154796"))
   
   /* Ex.18
       Write the function SearchMovie that receives a string and returns all the movies with that string in the title
-  */
-  
+  *//**************************DONE**************************/
+/*
+ function searchMovie(){
+  for (x = 0; x < 14; x++) {
+    if (movies[x].Title.includes("Avengers")){
+    console.log(movies[x].Title)
+  } 
+}
+}
+searchMovie()
+*/
   /* Ex.19
       Write the function SearchAndDivide that receives a string and returns an object with an array "match" with all the movies that contains the title and another array "nonMatch" with the other movies
   */
@@ -451,6 +460,7 @@ console.log(getMovieById("tt4154796"))
     },
   ];
   ////////////////////////////////// RIPRENDI DA QUI ///////////////////////////
+  /* 12
   function olderMovie(){
     for (let i = 0; i < movies.length; i++) {
       function oldest() {
@@ -465,22 +475,12 @@ console.log(getMovieById("tt4154796"))
   }
 
   console.log(olderMovie())
+*/
 
 
 
-  // EX 18
-  /*
-  function searchMovie(){
-    for (x = 0; x < 14; x++) {
-      if (movies[x].Title.match("Lord"))
-      return movies.Title;
-      else {
-        return "no match"
-      }
-    } 
-  };
-  console.log(searchMovie())
-  */
+
+  
   /*
   let string = "Lord of";
   function searchMovie(string) { 
