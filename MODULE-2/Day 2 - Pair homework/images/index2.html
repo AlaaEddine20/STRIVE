@@ -36,7 +36,7 @@
     <div class="container">
       <form>
         <label id="addNames" for="names"> Add Names: </label>
-        <input id="text" type="text" />
+        <input id="text" type="text" name="userName" />
         <input id="addN" type="button" onclick="addName()" value="Add" />
         <label for="teams">Add Number of Teams: </label>
         <select name="select">
@@ -55,17 +55,14 @@
       </form>
 
       <script>
-        const text = " ";
-        const addNames = document.getElementById("addN");
-        const numOfTeams = document.getElementById("addTeam");
+        addNames.addEventListener("click", addName);
 
         function addName() {
-          document.getElementById("addN");
-          addNames.addEventListener("click", onclick);
-          document.getElementById("text");
-          document.getElementById("container").innerHTML;
+          let text = document.getElementById("container");
+          const userName = document.getElementById("text");
+          text.innerText = userName.value;
+          value = "";
         }
-
         addName();
       </script>
     </div>
