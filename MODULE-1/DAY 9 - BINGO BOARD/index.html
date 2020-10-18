@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bingo Board</title>
-  </head>
-  <body>
     <style>
       #main-table {
         width: 500px;
@@ -18,7 +15,9 @@
         padding: 20px;
       }
     </style>
-
+    <title>Bingo Board</title>
+  </head>
+  <body>
     <div id="container">
       <table id="main-table">
         <tbody></tbody>
@@ -27,7 +26,7 @@
     <p>
       <input
         type="button"
-        onclick="randomNumbers()"
+        onclick="randomize()"
         value="Click here to create a new card"
       />
     </p>
@@ -37,26 +36,27 @@
         let tbody = document.querySelector("tbody");
         const righe = 4;
         const elementiPerRiga = 19;
+
         for (let i = 0; i < righe; i++) {
           let tr = document.createElement("tr");
           tbody.appendChild(tr);
+
           for (let k = 1; k < elementiPerRiga; k++) {
             let td = document.createElement("td");
-            td.innerText = Math.floor(Math.random() * 76); //i * elementiPerRiga + k + 1;
             tr.appendChild(td);
           }
         }
       };
-      // CHIEDI AL PROF
-      /*
-      const randomNumbers = function () {
-        let number = Math.floor(Math.random() * 76) + 1;
-        console.log(number);
-      };
 
-      randomNumbers();
-      */
-      createTable();
+      function randomize() {
+        addEventListener("click", function () {
+          //let numbers = Math.floor(Math.random() * 76);
+          document.getElementsByTagName("td");
+          td.innerText = Math.floor(Math.random() * 76);
+        });
+      }
+
+      randomize();
     </script>
   </body>
 </html>

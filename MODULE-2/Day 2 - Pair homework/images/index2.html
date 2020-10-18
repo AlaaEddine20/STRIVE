@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: brown;
+      }
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+      }
+
+      input {
+        margin: 20px 0;
+      }
+
+      .container {
+        position: relative;
+        left: 35%;
+        right: 65%;
+        border: 5px solid darkmagenta;
+        width: 600px;
+        height: 500px;
+        margin-top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label id="addNames" for="names"> Add Names: </label>
+        <input id="text" type="text" />
+        <input id="addN" type="button" onclick="addName()" value="Add" />
+        <label for="teams">Add Number of Teams: </label>
+        <select name="select">
+          <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+          <option value="1">4</option>
+        </select>
+        <input id="addTeam" type="button" value="add" />
+        <textarea
+          id="container"
+          name="add-names"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </form>
+
+      <script>
+        const text = " ";
+        const addNames = document.getElementById("addN");
+        const numOfTeams = document.getElementById("addTeam");
+
+        function addName() {
+          document.getElementById("addN");
+          addNames.addEventListener("click", onclick);
+          document.getElementById("text");
+          document.getElementById("container").innerHTML;
+        }
+
+        addName();
+      </script>
+    </div>
+  </body>
+</html>
