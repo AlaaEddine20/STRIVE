@@ -284,8 +284,17 @@ console.log(getMovieById("tt4154796"))
   
   /* Ex.17
       Write the function SumYears that returns the sum of the years the movie has been produced
-  */
-  
+  *//**************************DONE**************************/
+ /*
+ function sumYears() {
+  let movie = movies[11].Year
+  let diff = new Date(2020) - movie;
+  console.log(diff)
+
+}
+
+sumYears()
+*/
   /* Ex.18
       Write the function SearchMovie that receives a string and returns all the movies with that string in the title
   *//**************************DONE**************************/
@@ -459,6 +468,13 @@ searchMovie()
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
+
+
+    
+
+    
+
+
   ////////////////////////////////// RIPRENDI DA QUI ///////////////////////////
   /* 12
   function olderMovie(){
@@ -479,14 +495,3 @@ searchMovie()
 
 
 
-
-  
-  /*
-  let string = "Lord of";
-  function searchMovie(string) { 
-    for (i=0; i<movies.length; i++){
-    console.log(string === movies[i].Title);
-    }
-  }
-  console.log(searchMovie(string));
-  */
