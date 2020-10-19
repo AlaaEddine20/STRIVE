@@ -25,7 +25,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg mt-n1 ">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-md mt-n1 ">
       <a class="navbar-brand ml-3" href="#"
         ><img id="logo" src="./Netflix-Logo.wine.png" alt=""
       /></a>
@@ -67,15 +67,15 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <div id="search-icon" class="btn mb-1 mr-2">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <div id="search-icon" class="btn mb-1 mr-4">
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                     <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                 </svg>
             </div>
             <div class="nav-item mt-2">
-              <a class="nav-link active" href="#"
-                >Kids <span class="sr-only">(current)</span></a
+              <a class="nav-link active" style="font-size: 1rem;" href="#"
+                >Kids</a
               >
             </div>
             <div class="btn mt-1">
@@ -83,9 +83,9 @@
                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
               </svg>
             </div>
-            <div  class="dropdown mt-1">
+            <div  class="dropdown mt-2">
                 <button id="profile" class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img id="profile-icon" src="./profile-icon.png" alt="">
+                  <i id="profile-icon" class="fas fa-user-alt"></i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <button class="dropdown-item" type="button">My Account</button>
@@ -96,170 +96,136 @@
         </form>
     </nav>
     <main id="main" class="container-fluid pl-5 pr-0">
+      <h2 class="mt-4 text-white mt-3 mb-3">TV Shows <span class="dropdown ml-4"><button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Genres
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Drama</button>
+        <button class="dropdown-item" type="button">Horror</button>
+      </div></span></h4>
 			<h3 class="mt-4 text-white ml-2 mt-5 mb-3">Trending Now</h3>
-			<div class="row no-gutters">
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+			<div class="row no-gutters text-center">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="./movies/papel.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/power.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/punisher.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/stranger.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/witcher.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/alive.jpg" />
 				</div>
 			</div>
 
 			<h3 class="text-white ml-2 mt-5 mb-3">Watch it again</h3>
 			<div class="row no-gutters">
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="./movies/dark.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/bird-box.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/orange.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/whispers.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/re.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/ozark.jpg" />
 				</div>
 			</div>
 
 			<h3 class="text-white ml-2 mt-5 mb-3">New Realeases</h3>
 			<div class="row no-gutters row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-4">
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/umbrella.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/mysteries.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/Unorthodox.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/cursed.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/eddy.jpg" />
 				</div>
-				<div class="col text-center col-6 col-md-4 col-lg-2 mb-3 px-1">
+				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
 					<img class="img-fluid rounded" src="movies/Killer.jpeg" />
 				</div>
 			</div>
     </main>
-    <footer class="container ml-5 mx-auto ">
-      <div role= "content-info" class="member-footer ">       
-          <div class= "social-links"> 
-              <a class="social-link" href="https://www.youtube.com/netflixturkiye" target="blank" aria-label="youtube">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a class="social-link" href="https://www.instagram.com/netflixturkiye" target="blank" aria-label="instagram">
-                <i id="ig" class="fab fa-instagram"></i>
-              </a>
-              <a class="social-link" href="https://twitter.com/netflixturkiye" target="blank" aria-label="twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a class="social-link" href="https://www.facebook.com/netflixturkiye" target="blank" aria-label="facebook">
-                <i class="fab fa-facebook"></i>
-              </a>
+    <footer>
+      <div class="row  no-gutters mt-5 mb-0" >
+        <div class="col col-6 offset-3">
+          <div class="row no-gutters offset-3 px-4" style="color: grey;">
+            <a href="#">
+              <i class="fab fa-facebook-square mr-2" style="color: grey;"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram mr-2" style="color: grey;"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter mr-2" style="color: grey;"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube" style="color: grey;"></i>
+            </a>
           </div>
-
-          <div class= "container fluid"> 
-              <div class="row">
-                    <div class="col 6">
-                        <ul class= "member-footer-links">
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link"  id="footer-links"href="https://www.netflix.com/browse/subtitles" >
-                                    <span class= "member-footer-link-content"> Audio &Subtitles </span> 
-                            </li>
-
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link"  href="" >
-                                    <span class= "member-footer-link-content"> Audio Description </span> 
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content">Media Center </span> 
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content"> Privacy </span> 
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content"> Cookie Preferences </span> 
-                            </li>
-                            
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content"> Contact Us </span> 
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col 6">
-                        <ul class= "member-footer-links">
-
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content"> Audio Description </span>   
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content">Gift Cards </span> 
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content">Investor Relations</span> 
-                            </li>
-
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content"> Terms of Use </span> 
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content"> Legal Provisions </span> 
-                            </li>
-                            <li class="member-footer-link-wrapper">
-                                <a class="member-footer-link" href="" >
-                                    <span class= "member-footer-link-content">Corporate Information</span> 
-                            </li>
-                            
-                        </ul>
-                    </div> 
-                    
-                    
-                    </div> 
-                    
-                        <ul class= "member-footer-links">
-                            <li class="member-footer-link-wrapper mt-5x">
-                                <a class="member-footer-link " href="" >
-                                    <span id="serviceCode" class= "member-footer-link-content   p-2" > Service Code </span> 
-                            
-                        </ul>   
-                        <div class="member-footer-copywrite"> 
-                            <span> 1997-2020  Netflix Inc</span>
-                        </div>     
-                
+        </div>
+      </div>
+        <div class="row  no-gutters mt-2 mb-2" >
+          <div class="col col-6 offset-3">
+            <div class="row no-gutters offset-3 px-4" style="color: grey;">
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Audio and Subtitles</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Audio Description</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Help Center</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Gift Cards</div>
             </div>
-
-         </div>
-
+          </div>
+        </div>
+        <div class="row  no-gutters mt-0 mb-2" >
+          <div class="col col-6 offset-3">
+            <div class="row no-gutters offset-3 px-4" style="color: grey;">
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Media Center</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Investor Relations</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Jobs</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Terms of Use</div>
+            </div>
+          </div>
+        </div>
+        <div class="row  no-gutters mt-0 mb-2" >
+          <div class="col col-6 offset-3">
+            <div class="row no-gutters offset-3 px-4" style="color: grey;">
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Privacy</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Legal Notices</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Cookie Preferences</div>
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Corporate Informations</div>
+            </div>
+          </div>
+        </div>
+        <div class="row  no-gutters mt-0 mb-5" >
+          <div class="col col-6 offset-3">
+            <div class="row no-gutters offset-3 px-4" style="color: grey;">
+              <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Contact Us</div>
+            </div>
+          </div>
+        </div>
     </footer>
 
     <script
