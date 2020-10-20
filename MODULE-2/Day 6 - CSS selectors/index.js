@@ -43,7 +43,14 @@ function changeTitle(){
 changeTitle()
 
 //15
-
+function changeSizeCol() {
+    let col = document.querySelectorAll("h2")
+    for (let z = 0; z < col.length; z++) {
+        col[z].style.columnWidth = "200px";
+    }
+    
+}
+changeSizeCol()
 
 //16
 function removeLinks(){
@@ -51,11 +58,11 @@ function removeLinks(){
     col.remove();
 }
 removeLinks()
-
+/*
 //17
 function trimChar(){
     let divs = document.querySelectorAll("div.blog-post > p")
     divs.style.backgroundColor = 'blue'
 
 } 
-trimChar()
+trimChar()*/
