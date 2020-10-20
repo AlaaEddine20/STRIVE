@@ -22,13 +22,13 @@ function newNavLink() {
     //newLink.appendChild(document.getElementsByTagName("nav")[0])
   }
 newNavLink()
-/*
+
 function removeSearchIcon(){
-    let searchIcon = document.getElementsByTagName("svg");
+    let searchIcon = document.getElementsByTagName("svg")[0];
     searchIcon.remove();
 }
 removeSearchIcon()
-*/
+
 
 function changeJumbo(){
     for (const jumbo of document.querySelectorAll(".jumbotron")){
@@ -36,3 +36,4 @@ function changeJumbo(){
     }
 }
 changeJumbo()
+
