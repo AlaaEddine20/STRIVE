@@ -39,4 +39,13 @@ function changeTitle(){
 }
 
 changeTitle()
+//15
 
+
+
+//16
+function removeLinks(){
+    let col = document.querySelectorAll(".blog-sidebar .list-unstyled")[1]
+    col.remove();
+}
+removeLinks()
