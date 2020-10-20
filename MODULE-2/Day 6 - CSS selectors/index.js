@@ -10,33 +10,29 @@ EX18) Write a function and attach it to the "Newer" button, to add new Blog Post
 EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
 */
-
+//11
 function newNavLink() {
     let newLink = document.createElement("a");
     newLink.innerText = "NEWLINK";
-    //1
     const nav = document.getElementsByTagName("nav")[0];
     nav.appendChild(newLink);
 
-    //2
-    //newLink.appendChild(document.getElementsByTagName("nav")[0])
   }
 newNavLink()
-
+//12
 function removeSearchIcon(){
     let searchIcon = document.getElementsByTagName("svg")[0];
     searchIcon.remove();
 }
 removeSearchIcon()
-
-
+//13
 function changeJumbo(){
-    for (const jumbo of document.querySelectorAll(".jumbotron")){
-        jumbo.style.cssText = "background-color: blue !important";
-    }
+    const jumbo = document.querySelectorAll(".jumbotron")[0]
+    jumbo.style.cssText = "background-color: blue !important";
+    
 }
 changeJumbo()
-
+//14
 function changeTitle(){
     const newTitle = document.getElementsByTagName("h1")[0]
     newTitle.innerText = "New Title";
