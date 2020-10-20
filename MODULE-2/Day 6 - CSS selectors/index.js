@@ -19,12 +19,14 @@ function newNavLink() {
 
   }
 newNavLink()
+
 //12
 function removeSearchIcon(){
     let searchIcon = document.getElementsByTagName("svg")[0];
     searchIcon.remove();
 }
 removeSearchIcon()
+
 //13
 function changeJumbo(){
     const jumbo = document.querySelectorAll(".jumbotron")[0]
@@ -32,15 +34,15 @@ function changeJumbo(){
     
 }
 changeJumbo()
+
 //14
 function changeTitle(){
     const newTitle = document.getElementsByTagName("h1")[0]
     newTitle.innerText = "New Title";
 }
-
 changeTitle()
-//15
 
+//15
 
 
 //16
@@ -49,3 +51,11 @@ function removeLinks(){
     col.remove();
 }
 removeLinks()
+
+//17
+function trimChar(){
+    let divs = document.querySelectorAll("div.blog-post > p")
+    divs.style.backgroundColor = 'blue'
+
+} 
+trimChar()
