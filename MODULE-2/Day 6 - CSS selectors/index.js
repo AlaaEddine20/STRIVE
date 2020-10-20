@@ -37,3 +37,10 @@ function changeJumbo(){
 }
 changeJumbo()
 
+function changeTitle(){
+    const newTitle = document.getElementsByTagName("h1")[0]
+    newTitle.innerText = "New Title";
+}
+
+changeTitle()
+
