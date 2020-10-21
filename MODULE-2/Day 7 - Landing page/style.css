@@ -30,3 +30,36 @@ p.card-text {
   font-size: 0.8rem;
   color: grey;
 }
+
+#bottom-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+}
+#older {
+  color: blue;
+  background-color: white;
+}
+#newer {
+  color: grey;
+  background-color: white;
+}
+
+.card-footer {
+  color: grey;
+}
+
+#headings {
+  display: flex;
+  align-items: center;
+}
+#first-heading {
+  font-size: 50px;
+  font-weight: 600;
+}
+#second-heading {
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 20px;
+}
