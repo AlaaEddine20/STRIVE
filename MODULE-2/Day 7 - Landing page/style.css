@@ -63,3 +63,13 @@ p.card-text {
   font-weight: 400;
   margin-left: 20px;
 }
+
+#one {
+  background-color: yellow;
+}
+#two {
+  background-color: orange;
+}
+#three {
+  background-color: orangered;
+}
