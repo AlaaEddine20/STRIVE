@@ -17,8 +17,9 @@ p.card-text {
   color: grey;
 }
 
-.btn {
-  border: 1px solid grey;
+.btn.btn-light {
+  border: 0.05rem solid grey;
+  color: grey;
 }
 
 .min {
