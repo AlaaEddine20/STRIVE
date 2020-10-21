@@ -1,4 +1,4 @@
-body {
+jubody {
   margin: 0;
   box-sizing: border-box;
 }
@@ -14,5 +14,18 @@ p.card-text {
 
 #mo {
   font-size: 1.5rem;
+  color: grey;
+}
+
+.btn {
+  border: 1px solid grey;
+}
+
+.min {
+  display: block;
+  margin-left: 250px;
+  margin-top: -20px;
+  padding: 0;
+  font-size: 0.8rem;
   color: grey;
 }
