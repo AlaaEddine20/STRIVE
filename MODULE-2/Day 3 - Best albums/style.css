@@ -1,50 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background-image: linear-gradient(to bottom right, #18beb9, #c04cfd);
-  height: 100vh;
+  background-image: url(./images/baclgr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: azure;
 }
 
-.nav-link {
-  color: #feffff;
-  font-weight: bolder;
+#nav {
+  height: 170px;
+  background-image: url(./images/NavBackground.jpg);
   font-family: "Sansita Swashed", cursive;
-  font-size: 1.5rem;
-  padding-top: 5rem;
+  font-size: 2rem;
 }
 
-.nav-link:hover {
-  color: darkmagenta;
+a.nav-link {
+  color: white !important;
 }
 
-.jumbotron {
-  display: block;
-  font-family: "Sansita Swashed", cursive;
-  background-color: #073b4c;
-  color: #4ecdc4;
-  font-size: 5rem;
-  text-align: center;
-  width: 100%;
-  height: 400px;
-}
-
-.container-fluid {
-  padding: 0;
+a.nav-link:hover {
+  color: darkmagenta !important;
 }
 
 #albums {
-  margin-top: 10rem;
-  text-align: center;
+  margin-top: 236px;
 }
 
-.image {
-  border-radius: 50%;
-  margin-top: 3rem;
+#albums img {
+  border: 2px solid darkmagenta;
 }
 
-.titles {
-  color: #49cbf1;
+h2 {
+  font-family: "Sansita Swashed", cursive;
+}
+
+hr {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#first-blog {
+  display: flex;
+  flex-wrap: wrap;
 }
