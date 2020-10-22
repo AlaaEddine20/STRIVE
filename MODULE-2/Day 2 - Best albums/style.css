@@ -69,7 +69,11 @@ a.nav-link:hover {
 .lead {
   font-family: "Grenze Gotisch", cursive;
   font-size: 1.6rem;
-  color: #d3ebff;
+  color: #3dc4b2;
+  box-shadow: 4px 4px 30px rgb(108, 39, 117);
+  border-radius: 1.5rem;
+  text-decoration-color: #26b9fd;
+  padding: 10px;
 }
 
 hr {
