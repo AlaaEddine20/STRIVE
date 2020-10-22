@@ -16,6 +16,8 @@ body {
 }
 h2 {
   color: #26b9fd;
+  font-family: "Sansita Swashed", cursive;
+  text-shadow: 4px 4px 5px #000000;
 }
 
 #navbar {
@@ -52,9 +54,6 @@ a.nav-link:hover {
   margin-bottom: 10%;
 }
 
-h2 {
-  font-family: "Sansita Swashed", cursive;
-}
 .rounded-circle {
   box-shadow: 2px 5px 20px rgb(110, 199, 199);
   margin: 5% 0;
