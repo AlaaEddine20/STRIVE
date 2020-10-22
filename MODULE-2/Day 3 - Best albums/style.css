@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 * {
   box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
   color: #00c4eb;
 }
 h2 {
-  color: #613dc1;
+  color: #ffffff;
 }
 
 #navbar {
@@ -33,9 +34,18 @@ a.nav-link:hover {
   font-weight: 600;
 }
 
+#jumbotron {
+  margin-top: 5%;
+  background-image: url(./images/jumbo.jpg);
+  background-position: bottom;
+  color: #f0efeb;
+  font-family: "Staatliches", cursive;
+  position: relative;
+}
+
 #breadcrumb-wrapper {
-  margin-top: 10%;
-  margin-bottom: 20%;
+  margin-top: %;
+  margin-bottom: 10%;
 }
 
 h2 {
@@ -43,7 +53,7 @@ h2 {
 }
 .rounded-circle {
   box-shadow: 2px 5px 20px rgb(110, 199, 199);
-  margin: 40% 0;
+  margin: 5% 0;
 }
 
 .featurette-image {
