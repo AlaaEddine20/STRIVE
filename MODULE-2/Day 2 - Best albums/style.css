@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -13,10 +13,9 @@ body {
     rgba(43, 33, 48, 1) 35%,
     rgba(61, 70, 99, 1) 100%
   );
-  color: #00c4eb;
 }
 h2 {
-  color: #ffffff;
+  color: #26b9fd;
 }
 
 #navbar {
@@ -26,7 +25,8 @@ h2 {
 }
 
 a.nav-link {
-  color: #97dffc !important;
+  color: #ffffff !important;
+  text-shadow: 4px 4px #9202af;
 }
 
 a.nav-link:hover {
@@ -39,8 +39,12 @@ a.nav-link:hover {
   background-image: url(./images/jumbo.jpg);
   background-position: bottom;
   color: #f0efeb;
+  text-shadow: 4px 4px 5px #000000;
   font-family: "Staatliches", cursive;
   position: relative;
+}
+.subtitle {
+  font-size: 1.3rem;
 }
 
 #breadcrumb-wrapper {
@@ -61,6 +65,12 @@ h2 {
   height: 80%;
   object-fit: cover;
   box-shadow: 0 10px 20px teal;
+}
+
+.lead {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 1.6rem;
+  color: #d3ebff;
 }
 
 hr {
