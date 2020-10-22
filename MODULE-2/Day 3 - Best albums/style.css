@@ -5,43 +5,57 @@
 }
 
 body {
-  background-image: url(./images/baclgr.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: azure;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    56deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(43, 33, 48, 1) 35%,
+    rgba(61, 70, 99, 1) 100%
+  );
+  color: #00c4eb;
+}
+h2 {
+  color: #613dc1;
 }
 
-#nav {
-  height: 170px;
-  background-image: url(./images/NavBackground.jpg);
+#navbar {
+  height: 8vh;
   font-family: "Sansita Swashed", cursive;
   font-size: 2rem;
 }
 
 a.nav-link {
-  color: white !important;
+  color: #97dffc !important;
 }
 
 a.nav-link:hover {
-  color: darkmagenta !important;
+  color: white !important;
+  font-weight: 600;
 }
 
-#albums {
-  margin-top: 236px;
-}
-
-#albums img {
-  border: 2px solid darkmagenta;
+#breadcrumb-wrapper {
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 
 h2 {
   font-family: "Sansita Swashed", cursive;
 }
+.rounded-circle {
+  box-shadow: 2px 5px 20px rgb(110, 199, 199);
+  margin: 40% 0;
+}
+
+.featurette-image {
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px teal;
+}
 
 hr {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 #first-blog {
