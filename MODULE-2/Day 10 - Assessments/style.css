@@ -1,0 +1,83 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d8d8d8;
+  font-family: Lato GOG Latin, Lato GOG, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#navbar {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  height: 6%;
+  padding: 1% 1%;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-item a {
+  color: grey !important;
+}
+
+.navbar-brand {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+  margin: 0 0 0.2rem 0;
+}
+
+.navbar-toggler {
+  background-color: grey !important;
+}
+
+#shopping-icon {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  color: grey;
+}
+
+#search-icon {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+}
+
+#icon-container {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+}
+#icon-container a {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+#main-container {
+  margin-top: 100px;
+}
+
+.d-block {
+  height: 460px;
+}
+
+.cog-galaxy {
+  color: darkmagenta;
+  font-weight: 600;
+}
+
+.now-on-sale {
+  color: black;
+  font-weight: 600;
+}

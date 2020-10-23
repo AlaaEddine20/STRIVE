@@ -15,7 +15,7 @@ body {
   );
 }
 h2 {
-  color: #26b9fd;
+  color: #8100b4;
   font-family: "Sansita Swashed", cursive;
   text-shadow: 4px 4px 5px #000000;
 }
@@ -69,7 +69,7 @@ a.nav-link:hover {
 .lead {
   font-family: "Grenze Gotisch", cursive;
   font-size: 1.6rem;
-  color: #3dc4b2;
+  color: #30a5d3;
   box-shadow: 4px 4px 30px rgb(108, 39, 117);
   border-radius: 1.5rem;
   text-decoration-color: #26b9fd;
