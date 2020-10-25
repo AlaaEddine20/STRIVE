@@ -118,7 +118,7 @@ hr {
 #soon-icon {
   display: block;
   background-color: rgb(3, 88, 114);
-  padding: 7px 8px;
+  padding: 3px 4px;
   color: white;
   font-size: 65%;
   font-weight: 600;
@@ -139,4 +139,15 @@ hr {
 #windows-icon {
   filter: invert(50%);
   -webkit-filter: invert(60%);
+}
+
+#nav-3 a{
+  color: #b4927c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#nav-3 a:hover{
+  color: #cea589;
+  
 }
