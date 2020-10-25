@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap");
+
 * {
   margin: 0%;
   padding: 0%;
@@ -6,7 +8,7 @@
 
 body {
   background: #40342c;
-  font-family: Lato GOG Latin, Lato GOG, sans-serif;
+  font-family: font-family: 'Roboto', sans-serif;
   font-size: 100%;
   font-weight: 400;
   line-height: 1;
@@ -111,4 +113,30 @@ hr {
 #goc {
   border-left: 1px solid grey;
   margin-bottom: 1rem;
+}
+
+#soon-icon {
+  display: block;
+  background-color: rgb(3, 88, 114);
+  padding: 7px 8px;
+  color: white;
+  font-size: 65%;
+  font-weight: 600;
+}
+
+#calendar-icon {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+}
+
+#windows-icon-1 {
+  filter: invert(50%);
+  -webkit-filter: invert(60%);
+  margin-left: 5rem;
+  margin-top: -5rem;
+}
+
+#windows-icon {
+  filter: invert(50%);
+  -webkit-filter: invert(60%);
 }
