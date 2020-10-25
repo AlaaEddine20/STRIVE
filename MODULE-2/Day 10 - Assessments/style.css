@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #d8d8d8;
+  background: #40342c;
   font-family: Lato GOG Latin, Lato GOG, sans-serif;
   font-size: 100%;
   font-weight: 400;
@@ -24,6 +24,25 @@ body {
   font-weight: 500;
 }
 
+.nav-item-2 a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8b7464;
+}
+
+.nav-item-2 a:hover {
+  color: #a78975;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #746053;
+  margin: 1em 0;
+  padding: 0;
+}
+
 .nav-item a {
   color: rgb(216, 214, 214) !important;
 }
@@ -39,6 +58,12 @@ body {
 
 .navbar-toggler {
   background-color: grey !important;
+}
+
+.card {
+  background-color: #302823;
+  color: white;
+  font-size: 0.8rem;
 }
 
 #shopping-icon {
@@ -79,7 +104,7 @@ body {
 }
 
 .section-titles {
-  color: black;
+  color: white;
   font-weight: 600;
 }
 
