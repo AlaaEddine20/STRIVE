@@ -48,6 +48,10 @@ body {
   border-top: 2px solid black;
 }
 
+.tracks {
+  margin-bottom: 8%;
+}
+
 #sidebar {
   position: fixed;
   left: 0;
@@ -56,7 +60,7 @@ body {
   background-color: #050505 !important;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   #sidebar {
     display: none !important;
     padding: 0 !important;
@@ -145,4 +149,9 @@ body {
 }
 .navigation-item svg {
   color: white;
+}
+
+#album-cover {
+  width: 70%;
+  box-shadow: 1px 1px 10px black;
 }
