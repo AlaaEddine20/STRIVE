@@ -186,3 +186,20 @@ largestEvenNum()
      }
  }
  */
+
+ // EXERCISE 16 
+/* 
+ const isPositiveOrNegative = function(n1, n2) {
+     if (n1 > 0 && n2 < 0) {
+         return "n1 is positive, n2 is negative"
+     } else if (n1 < 0 && n2 > 0) {
+         return "n1 is negative, n2 is positive"
+     } else if (n1 > 0 && n2 > 0) {
+         return "Both numbers are positive"
+     } else if (n1 < 0 && n2 < 0) {
+         return "Both numbers are negative"
+     } else {
+         return "Unknown"
+     }
+ }
+ */
