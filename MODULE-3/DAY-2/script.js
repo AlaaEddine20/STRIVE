@@ -47,3 +47,18 @@ const biggestInteg = function() {
 
 console.log(biggestInteg())
 */
+
+// EXERCISE 5
+/*
+const range = function(a, b) {
+    for (let i = 1; i <=100; i++) {
+        if (((a > 40 && a < 60) || (a > 70 && b <= 100)) || ((b > 40 && b < 60) || (b > 70 && b <= 100))) {
+            return "a or b in range"
+        } else {
+            return "a & b not in range"
+        }
+    } 
+}
+
+console.log(range(39, 71))
+*/
