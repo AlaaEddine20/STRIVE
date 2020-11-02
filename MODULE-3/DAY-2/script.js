@@ -217,4 +217,16 @@ largestEvenNum()
           return false 
       }
   }
-   */
+*/
+
+// EXERCISE 18 
+/* 
+const isTheSumInRange = function(n1, n2) {
+    let sum = n1 + n2
+    if (sum > 50 && sum < 80) {
+        return 65
+    } else {
+        return 80
+    }
+}
+ */
