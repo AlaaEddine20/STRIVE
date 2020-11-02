@@ -64,8 +64,18 @@ console.log(range(39, 71))
 */
 
 // EXERCISE 6
+/*
+const copiesOfStr = function() {
+    let str = "Alan"
+    let times = 3
+    let arr = []
+    let newArray = new Array (times + 1).join(str)
+    arr.push(newArray)
+    return arr
+}
 
-
+console.log(copiesOfStr())
+*/
 
 // EXERCISE 7
 /*
