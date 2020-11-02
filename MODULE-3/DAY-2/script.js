@@ -32,7 +32,7 @@ const checkInteg = function() {
 /*
 const removeAndReturnString = function() {
     let string = "remove a character and return new string"
-    let newStr = string.replace('a', '');
+    let newStr = string.substr(7, 9);
     console.log(newStr)
 }
 removeAndReturnString()
@@ -64,18 +64,18 @@ console.log(range(39, 71))
 */
 
 // EXERCISE 6
-/*
-const copiesOfStr = function() {
-    let str = "Alan"
-    let times = 3
-    let arr = []
-    let newArray = new Array (times + 1).join(str)
-    arr.push(newArray)
-    return arr
-}
 
-console.log(copiesOfStr())
-*/
+// const copiesOfStr = function() {
+//     let str = "Alan"
+//     let times = 3
+//     let arr = []
+//     let newArray = new Array (times + 1).join(str + ", ")
+//     arr.push(newArray)
+//     console.log(arr)
+// }
+
+// copiesOfStr()
+
 
 // EXERCISE 7
 /*
