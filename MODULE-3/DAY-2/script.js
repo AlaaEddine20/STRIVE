@@ -123,7 +123,7 @@ console.log(doesNotContainOneOrThree())
 */
 
 // EXERCISE 11 
-
+/*
 const longestString = function() {
     let arrayOfStr = ["i am the longest", "no, i am the longest", "you mortals, I AM the longest and BIGGEST"]
     let longestStr = arrayOfStr[0]
@@ -135,3 +135,23 @@ const longestString = function() {
 }
 
 console.log(longestString())
+*/
+
+// EXERCISE 12
+/*
+const typesOfAngles = function(angle) {
+    if (angle > 0 && angle < 90) {
+        return "is an acute angle"
+    } else if (angle === 90) {
+        return "is a right angle"
+    } else if (angle > 90 && angle < 180) {
+        return "is a btuse angle"
+    } else if (angle === 180) {
+        return "is a straight angle"
+    } else {
+        return "no type of angle found"
+    }
+}
+
+console.log(typesOfAngles(90))
+*/
