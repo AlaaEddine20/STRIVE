@@ -1,32 +1,27 @@
 
 // EXERCISE 1
 /*
-const calculateSumOfInteg = function() {
-    let integOne = 4
-    let integTwo = 4
-    let sum = integOne + integTwo
-    if (integOne === integTwo) {
+const calculateSumOfInteg = function(n1, n2) {
+    let sum = n2 + n2
+    if (n1 === n2) {
         return 3*(sum)
     } else {
         return "not the same"
     }
 }
-
 */
 
 // EXERCISE 2
-/*
-const checkInteg = function() {
-    let integOne = 25
-    let integTwo = 25
-    let sum = integOne + integTwo
-    if ((integOne === 50 || integTwo === 50) || (sum === 50)) {
+
+/* const checkInteg = function(n1, n2) {
+    let sum = n1 + n2
+    if ((n1 === 50 || n2 === 50) || (sum === 50)) {
         return true
     } else {
         return false
     }
-}
-*/
+} */
+
 
 // EXERCISE 3
 /*
@@ -39,14 +34,13 @@ removeAndReturnString()
 */
 
 // EXERCISE 4
-/*
-const biggestInteg = function() {
-    let arrayOfInteg = [1, 2, 3]
-    return Math.max(...arrayOfInteg)
-}
 
-console.log(biggestInteg())
-*/
+/* const biggestInteg = function(n1, n2, n3) {
+    let array = []
+    array.push(n1, n2, n3)
+    console.log(array)
+    return Math.max(...array)
+} */
 
 // EXERCISE 5
 /*
@@ -60,52 +54,45 @@ const range = function(a, b) {
     } 
 }
 
-console.log(range(39, 71))
 */
 
 // EXERCISE 6
 
-// const copiesOfStr = function() {
-//     let str = "Alan"
-//     let times = 3
-//     let arr = []
-//     let newArray = new Array (times + 1).join(str + ", ")
-//     arr.push(newArray)
-//     console.log(arr)
-// }
+/* const copiesOfStr = function(str, times) {
+    let arr = []
+    let newArray = new Array (times + 1).join(str + ", ")
+    arr.push(newArray)
+    console.log(arr)
+}
 
-// copiesOfStr()
+console.log(copiesOfStr('Alan', 3)) */
 
 
 // EXERCISE 7
-/*
-const isLosOrNew = function() {
-    let cities = ["New Jersey", "Boston", "Los Angeles", "Miami", "New York", "Los Gatos"]
-    
+
+/* const isLosOrNew = function(cities) {
     for (let i = 0; i < cities.length; i++) {
         if ((cities[i].includes("Los")) || (cities[i].includes("New"))) {
-            console.log(cities[i]) 
-        } 
-    }
+            let cityName = cities[i]
+            console.log(cityName)
+    } 
 }
+}
+isLosOrNew(["New york", "Los Angeles", "New jersey"]) */
 
-isLosOrNew()
-*/
 
 // EXERCISE 8
-/*
-const sumElementsOfArray = function() {
-    let arrayOfInteg = [7, 12, 22]
-    let sum = arrayOfInteg[0] + arrayOfInteg[1] + arrayOfInteg[2]
-    
-    console.log(sum)
+/* 
+const sumElementsOfArray = function(array) {
+    let sum = array[0] + array[1] + array[2]
+    return sum
 }
 
-sumElementsOfArray()
-*/
+sumElementsOfArray([1, 2, 3])
+ */
 
 // EXERCISE 9
-/*
+/* 
 const containsOneOrThree = function() {
     let arrayOfInteg = [4, 3]
     if ((arrayOfInteg.includes(1)) || (arrayOfInteg.includes(3))) {
@@ -116,7 +103,7 @@ const containsOneOrThree = function() {
 }
 
 console.log(containsOneOrThree())
-*/
+ */
 
 // EXERCISE 10 
 /*
@@ -133,9 +120,8 @@ console.log(doesNotContainOneOrThree())
 */
 
 // EXERCISE 11 
-/*
-const longestString = function() {
-    let arrayOfStr = ["i am the longest", "no, i am the longest", "you mortals, I AM the longest and BIGGEST"]
+/* 
+const longestString = function(arrayOfStr) {
     let longestStr = arrayOfStr[0]
     for (let i = 0; i < arrayOfStr.length; i++) {
         if (arrayOfStr[i].length > longestStr.length) {
@@ -143,9 +129,8 @@ const longestString = function() {
         }
     } return longestStr
 }
+ */
 
-console.log(longestString())
-*/
 
 // EXERCISE 12
 /*
@@ -167,29 +152,37 @@ console.log(typesOfAngles(90))
 */
 
 // EXERCISE 13
-/*
-const greatestElementOfArray = function() {
-    let arrayOfInteg = [23, 5, 76, 180, 7, 44]
-    let indexOfGreatest = arrayOfInteg.indexOf(Math.max(...arrayOfInteg))
+/* 
+const greatestElementOfArray = function(array) {
+    let indexOfGreatest = array.indexOf(Math.max(...array))
     console.log(indexOfGreatest)
 }
+ */
 
-greatestElementOfArray()
-*/
 
 // EXERCISE 14
-/*
+/* 
 const largestEvenNum = function() {
     let numbers = [23, 5, 76, 180, 7, 44]
     let evenNumbers = []
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 != 1) {
             evenNumbers.push(numbers[i])
-            // console.log(evenNumbers)
         }
     } let greatestEvenNum = Math.max(...evenNumbers)
     console.log(greatestEvenNum)
 }
 
 largestEvenNum()
-*/
+ */
+
+ // EXERCISE 15
+/* 
+ const is50OrsumIs50 = function(n1, n2) {
+     if ((n1 === 50 || n2 === 50) || (n1 + n2 === 50)) {
+         return true
+     } else {
+         return false
+     }
+ }
+ */
