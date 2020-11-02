@@ -202,4 +202,20 @@ largestEvenNum()
          return "Unknown"
      }
  }
- */
+  */
+
+  // EXERCISE 17 
+/* 
+  const upOrLow = function(newStr) {
+      let firstThreeChars = newStr.substring(0, 3)
+      let restOfChars = newStr.substring(3, newStr.length)
+      if ((firstThreeChars.toLowerCase()) && (restOfChars.toUpperCase())) {
+          return firstThreeChars + restOfChars
+      } else if (newStr.length < 3) {
+          return newStr.toUpperCase()
+      } else {
+          return false 
+      }
+  }
+  console.log(upOrLow("cia SO ITALIANO"))
+   */
