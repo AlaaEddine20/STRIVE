@@ -81,3 +81,15 @@ const isLosOrNew = function() {
 
 isLosOrNew()
 */
+
+// EXERCISE 8
+/*
+const sumElementsOfArray = function() {
+    let arrayOfInteg = [7, 12, 22]
+    let sum = arrayOfInteg[0] + arrayOfInteg[1] + arrayOfInteg[2]
+    
+    console.log(sum)
+}
+
+sumElementsOfArray()
+*/
