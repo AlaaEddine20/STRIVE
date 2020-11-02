@@ -62,3 +62,22 @@ const range = function(a, b) {
 
 console.log(range(39, 71))
 */
+
+// EXERCISE 6
+
+
+
+// EXERCISE 7
+/*
+const isLosOrNew = function() {
+    let cities = ["New Jersey", "Boston", "Los Angeles", "Miami", "New York", "Los Gatos"]
+    
+    for (let i = 0; i < cities.length; i++) {
+        if ((cities[i].includes("Los")) || (cities[i].includes("New"))) {
+            console.log(cities[i]) 
+        } 
+    }
+}
+
+isLosOrNew()
+*/
