@@ -95,10 +95,10 @@ sumElementsOfArray()
 */
 
 // EXERCISE 9
-/*
+
 const containsOneOrThree = function() {
-    let arrayOfInteg = [1, 3]
-    if ((arrayOfInteg.includes(1)) && (arrayOfInteg.includes(3))) {
+    let arrayOfInteg = [4, 3]
+    if ((arrayOfInteg.includes(1)) || (arrayOfInteg.includes(3))) {
         return true
     } else {
         return false
@@ -106,4 +106,8 @@ const containsOneOrThree = function() {
 }
 
 console.log(containsOneOrThree())
-*/
+
+
+// EXERCISE 10 
+
+// const doesNotContainOne = function
