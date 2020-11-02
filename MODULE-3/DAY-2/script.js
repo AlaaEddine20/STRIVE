@@ -217,5 +217,4 @@ largestEvenNum()
           return false 
       }
   }
-  console.log(upOrLow("cia SO ITALIANO"))
    */
