@@ -121,3 +121,17 @@ const doesNotContainOneOrThree = function(){
 
 console.log(doesNotContainOneOrThree())
 */
+
+// EXERCISE 11 
+
+const longestString = function() {
+    let arrayOfStr = ["i am the longest", "no, i am the longest", "you mortals, I AM the longest and BIGGEST"]
+    let longestStr = arrayOfStr[0]
+    for (let i = 0; i < arrayOfStr.length; i++) {
+        if (arrayOfStr[i].length > longestStr.length) {
+            longestStr = arrayOfStr[i]
+        }
+    } return longestStr
+}
+
+console.log(longestString())
