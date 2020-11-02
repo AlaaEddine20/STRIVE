@@ -166,3 +166,20 @@ const greatestElementOfArray = function() {
 
 greatestElementOfArray()
 */
+
+// EXERCISE 14
+/*
+const largestEvenNum = function() {
+    let numbers = [23, 5, 76, 180, 7, 44]
+    let evenNumbers = []
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 != 1) {
+            evenNumbers.push(numbers[i])
+            // console.log(evenNumbers)
+        }
+    } let greatestEvenNum = Math.max(...evenNumbers)
+    console.log(greatestEvenNum)
+}
+
+largestEvenNum()
+*/
