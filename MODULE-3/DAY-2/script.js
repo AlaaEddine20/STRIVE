@@ -155,3 +155,14 @@ const typesOfAngles = function(angle) {
 
 console.log(typesOfAngles(90))
 */
+
+// EXERCISE 13
+/*
+const greatestElementOfArray = function() {
+    let arrayOfInteg = [23, 5, 76, 180, 7, 44]
+    let indexOfGreatest = arrayOfInteg.indexOf(Math.max(...arrayOfInteg))
+    console.log(indexOfGreatest)
+}
+
+greatestElementOfArray()
+*/
