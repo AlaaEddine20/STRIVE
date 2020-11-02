@@ -37,3 +37,13 @@ const removeAndReturnString = function() {
 }
 removeAndReturnString()
 */
+
+// EXERCISE 4
+/*
+const biggestInteg = function() {
+    let arrayOfInteg = [1, 2, 3]
+    return Math.max(...arrayOfInteg)
+}
+
+console.log(biggestInteg())
+*/
