@@ -101,7 +101,6 @@
       }
     </style>
   </head>
-
   <body>
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
@@ -165,33 +164,6 @@
         </div>
       </div>
     </header>
-    <div id="tutorialsplaneModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-hidden="true"
-            >
-              ×
-            </button>
-            <h4 class="modal-title">
-              Tutorialsplane Modal Demo : Image in Modal
-            </h4>
-          </div>
-          <div class="modal-body">
-            <img src="${images}" style="width: 100%; height: 100%" />
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <main role="main">
       <section class="jumbotron text-center">
@@ -623,6 +595,7 @@
                   width="100%"
                   height="225"
                   role="img"
+
                 />
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" />
@@ -642,17 +615,22 @@
                     <div class="btn-group">
                       <button
                         type="button"
-                        id="viewBtn"
                         class="btn btn-sm btn-outline-secondary"
-                      >
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        onclick="viewclick(0)"
+                        id = "viewBtn"
 
+                        >
                         View
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary" onclick="myFunction()"
+                        class="btn btn-sm btn-outline-secondary"
+                        id="hideBtn"
+                        onclick = "hideclick()"
                       >
-                        hide
+                        Edit
                       </button>
                     </div>
                     <small class="text-muted">${element.id}</small>
@@ -676,9 +654,12 @@
                 <img
                   src="${images}"
                   class="card-img-top"
+                  style = "display: none;"
+
                   width="100%"
                   height="225"
                   role="img"
+
                 />
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" />
@@ -699,14 +680,19 @@
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
-                        id="viewBtn"
-                        onclick="myFunction()"
-                      >
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        onclick="viewclick(0)"
+                        id = "viewBtn"
+
+                        >
                         View
                       </button>
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        id="hideBtn"
+                        onclick = "hideclick()"
                       >
                         Hide
                       </button>
@@ -720,13 +706,21 @@
           });
       };
 
-      const myFunction = function () {
-        let viewImg = document.querySelector("#viewBtn");
+      const viewclick = () => {
+        let parent = document.querySelector(".parent .parent2");
+        let viewBtn = document.querySelector("#viewBtn");
+        let image = document.querySelectorAll(".card-img-top");
+        for (let i = 0; i < image.length; i++) {
+          image[i].style.display = "block";
+        }
+      };
 
-        if (viewImg == "onclick") {
-          divsToView.style.display = ${images}
-        } else {
-          divsToView.style.display = "none";
+      const hideclick = () => {
+        let parent = document.querySelectorAll(".parent .parent2");
+        let hideBtn = document.querySelector("#hideBtn");
+        let image = document.querySelectorAll(".card-img-top");
+        for (let i = 0; i < image.length; i++) {
+          image[i].style.display = "none";
         }
       };
     </script>
