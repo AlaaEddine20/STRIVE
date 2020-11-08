@@ -17,7 +17,7 @@ const fetchData = fetch('https://striveschool-api.herokuapp.com/books')
           role="img"
 
         />
-        <button id="addToCart" type="button" onclick='addItemToList(${index})' class="btn btn-lg btn-dark btn-block">Add to cart</button>
+        <button id="addToCart" type="button" onclick='addItemToList(${index})'  class="btn btn-lg btn-dark btn-block">Add to cart</button>
         
 
       </div>`
@@ -32,11 +32,10 @@ const addItemToList = (index) => {
     bookCard.style.opacity=0.4
     let cart = document.querySelector("#cart")
     cart.innerHTML += 1
-
-    
-    
     
 } 
+
+
 
 
 

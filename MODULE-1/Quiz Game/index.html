@@ -15,48 +15,21 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Online shopping</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
-      h1 {
-        font-family: "Caveat", cursive;
-        font-weight: 700;
-        color: rgb(211, 211, 211);
-        font-style: oblique;
-        font-variant: small-caps;
-        background: linear-gradient(
-          90deg,
-          rgb(0, 0, 0) 0%,
-          rgb(0, 84, 163) 50%,
-          rgb(0, 0, 0) 100%
-        );
-      }
-      body {
-        background: rgb(0, 0, 0);
-        background: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 1) 50%,
-          rgba(0, 26, 45, 1) 100%
-        );
-      }
-    </style>
+    <title>Home Page</title>
   </head>
   <body>
-    <h1 class="container-lg d-flex mb-5 justify-content-center fixed-top">
-      Your Book Store
-    </h1>
-    <span
-      id="cart"
-      class="d-flex justify-content-start mr-5 fixed-top"
-      style="color: white; border: 2px solid rgb(0, 125, 184); width: 10%"
-      >CART</span
-    >
-    <div class="container-lg">
-      <div class="row row-cols-3 main-row"></div>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="home row text-center">
+        <h1 class="my-5">Are you ready?</h1>
+        
+        <a class="btn-start" href="game.html"> START </a>
+        <a class="btn-scores mt-4" href="#"> Best Scores </a>
+        
     </div>
 
-    <!--------------------------SCRIPT LINKS-------------------------------->
+    <!-------------------SCRIPTS-------------------->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -72,6 +45,5 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>
