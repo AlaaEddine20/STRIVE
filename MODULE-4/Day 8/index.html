@@ -64,22 +64,13 @@
         </div>
       </nav>
       <div class="row">
-        <div class="col-12">
-          <div class="current-products mt-5">
-            <h3 class="product-name"></h3>
-            <img style="width: 50%" class="image-url" src="" alt="" />
-            <p class="product-brand">Brand:</p>
-            <p class="product-description"></p>
-            <p class="product-price">Price:</p>
-          </div>
-        </div>
+        
       </div>
     </div>
     <!---------------------JS------------------------->
     <script>
       window.onload = async () => {
         const url = "https://striveschool-api.herokuapp.com/api/product/";
-        let currentProducts = document.querySelector(".current-products");
         let headers = {
           "Content-type": "application/json",
           Authorization:
@@ -91,7 +82,7 @@
             headers,
           });
           let products = await response.json();
-
+          
           if (products.length > 0) {
             products.forEach((product) => {
               let productName = product.name;
@@ -99,21 +90,18 @@
               let productBrand = product.brand;
               let productDescription = product.description;
               let productPrice = product.price;
-              let name = (document.querySelector(
-                ".product-name"
-              ).innerHTML = productName);
-              let image = (document.querySelector(
-                ".image-url"
-              ).src = productImg);
-              let brand = (document.querySelector(
-                ".product-brand"
-              ).innerHTML = productBrand);
-              let description = (document.querySelector(
-                ".product-description"
-              ).innerHTML = productDescription);
-              let price = (document.querySelector(
-                ".product-price"
-              ).innerHTML = productPrice);
+              let parent = document.querySelector(".row")
+              let currentProduct = `<div class="col-lg-4 col-sm-6 col-md-6 d-flex justify-content-center">
+          <div class="current-products mt-5">
+            <h3 class="product-name">${productName}</h3>
+            <img style="width: 50%" class="image-url" src="${productImg}" alt="" />
+            <p class="product-brand">Brand: ${productBrand}</p>
+            <p class="product-description">${productDescription}</p>
+            <p class="product-price">Price: €${productPrice}</p>
+          </div>
+        </div>`;
+              parent.innerHTML += currentProduct
+              
             });
           } else {
             currentProducts.innerHTML = "<h1>No Product Created</h1>";
