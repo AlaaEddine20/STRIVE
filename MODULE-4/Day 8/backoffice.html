@@ -64,6 +64,7 @@
                   id="product-name"
                   rows="3"
                   placeholder="Write here the product name"
+                  required
                 ></textarea>
               </div>
   
@@ -74,6 +75,7 @@
                   class="form-control"
                   id="product-description"
                   placeholder="Write here the description of the product"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -83,6 +85,7 @@
                   class="form-control"
                   id="product-brand"
                   placeholder="Write here the product brand"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -92,6 +95,7 @@
                   class="form-control"
                   id="product-price"
                   placeholder="Write here the product price"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -101,6 +105,7 @@
                   class="form-control"
                   id="image-url"
                   placeholder="Provide a url for the image"
+                  required
                 />
               </div>
   
@@ -111,6 +116,7 @@
                   type="submit"
                   value="Submit product"
                 >
+                <span id="spinner" class="spinner-grow spinner-grow-sm d-none" role="status" aria-hidden="true"></span>
                   Submit Product
                 </button>
               </div>
@@ -132,6 +138,8 @@
       };
 
         const submitProduct = async () => {
+          let spinner = document.getElementById('spinner')
+          spinner.classList.toggle("d-none")
             let myProducts = {
               name: document.querySelector("#product-name").value,
               description: document.querySelector("#product-description").value,

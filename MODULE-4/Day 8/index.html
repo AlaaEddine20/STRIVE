@@ -82,6 +82,7 @@
             headers,
           });
           let products = await response.json();
+          products.reverse()
           
           if (products.length > 0) {
             products.forEach((product) => {
