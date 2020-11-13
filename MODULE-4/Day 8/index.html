@@ -35,10 +35,13 @@
       font-size: 1.5rem;
     "
   >
-    <div class="container-lg">
-      <h1 class="mt-5">Welcome to StrivyZon</h1>
-      <nav class="navbar navbar-expand-lg flex-column navbar-dark rounded-lg mb-4">
-        <h2 class="navbar-brand p-2 mx-auto rounded" style="background: rgb(53, 65, 53);font-weight: 400; color: rgb(218, 218, 218);"">Product Creator</h2>
+    <div class="container-fluid">
+      <h1 class="mt-5 text-center" style="font-weight: 700">
+        Welcome to StrivyZon
+      </h1>
+      <nav
+        class="navbar navbar-expand-lg flex-column navbar-dark rounded-lg mb-4"
+      >
         <button
           class="navbar-toggler"
           type="button"
@@ -63,9 +66,7 @@
           </ul>
         </div>
       </nav>
-      <div class="row">
-        
-      </div>
+      <div class="row d-flex justify-content-center"></div>
     </div>
     <!---------------------JS------------------------->
     <script>
@@ -82,8 +83,8 @@
             headers,
           });
           let products = await response.json();
-          products.reverse()
-          
+          products.reverse();
+
           if (products.length > 0) {
             products.forEach((product) => {
               let productName = product.name;
@@ -91,18 +92,27 @@
               let productBrand = product.brand;
               let productDescription = product.description;
               let productPrice = product.price;
-              let parent = document.querySelector(".row")
-              let currentProduct = `<div class="col-lg-4 col-sm-6 col-md-6 d-flex justify-content-center">
-          <div class="current-products mt-5">
-            <h3 class="product-name">${productName}</h3>
-            <img style="width: 50%" class="image-url" src="${productImg}" alt="" />
-            <p class="product-brand">Brand: ${productBrand}</p>
-            <p class="product-description">${productDescription}</p>
-            <p class="product-price">Price: €${productPrice}</p>
-          </div>
-        </div>`;
-              parent.innerHTML += currentProduct
-              
+              let parent = document.querySelector(".row");
+              let currentProduct = `
+<div class="card col-lg-3 col-md-4 col-sm-6 mx-auto my-2">
+  <div class="card-body">
+    <div>
+      <h4 class="card-title font-weight-bold mb-2 text-center">${productName}</h4>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <img style="width: 70%; height: 25vh;" src="${productImg}" alt="Card image">
+  </div>
+  <div class="card-body mx-auto">
+    <div class="collapse-content my-auto">
+       <p class="text-center">€${productPrice}</p>
+      <a class="btn btn-dark" href="productDetails.html?id=${product._id}">More info>> </a>
+    </div>
+
+  </div>
+
+</div>`;
+              parent.innerHTML += currentProduct;
             });
           } else {
             currentProducts.innerHTML = "<h1>No Product Created</h1>";

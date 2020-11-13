@@ -141,11 +141,60 @@ a:hover {
   height: 170px;
 }
 
-.container-foo {
-  margin-left: 550px;
-}
-
 .btn {
   color: White;
-  border: 1px solid white;
+}
+
+img {
+  width: 100%;
+  height: 10rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#form {
+  color: aliceblue;
+  margin: 16% auto !important;
+  width: 40% !important;
+  border-radius: 1rem;
+  background-color: rgba(46, 45, 45, 0.4);
+}
+
+input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid red;
+  outline: 0;
+  background: transparent;
+  color: white;
+  width: 60% !important;
+}
+
+select {
+  margin-left: 1.5rem;
+  border: 0;
+  border-bottom: 1px solid red;
+  outline: 0;
+  background: transparent;
+  color: red;
+}
+
+textarea {
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid red;
+  outline: 0;
+  background: transparent;
+  color: white;
+}
+
+#imgUrl {
+  width: 100% !important;
 }

@@ -22,7 +22,7 @@
 
 
 
-    <title>Hello, world!</title>
+    <title>Netflix</title>
   </head>
   <body>
     <nav id="navbar" class="navbar navbar-dark navbar-expand-md mt-n1 ">
@@ -95,7 +95,7 @@
             </div>
         </form>
     </nav>
-    <main id="main" class="container-fluid pl-5 pr-0">
+    <main id="main" class="container-fluid no-gutters pl-5 pr-0">
       <h2 class="mt-4 text-white mt-3 mb-3">TV Shows <span class="dropdown ml-4"><button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Genres
       </button>
@@ -106,72 +106,311 @@
       </div></span></h4>
 			<h3 class="mt-4 text-white ml-2 mt-5 mb-3">Trending Now</h3>
 			<div class="row no-gutters text-center">
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="./movies/papel.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/power.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/punisher.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/stranger.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/witcher.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/alive.jpg" />
-				</div>
+        <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/Unorthodox.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/witcher.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/orange.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/papel.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/re.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/punisher.jpg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 col-sm-6 col-lg-2">
+                <a href="#"
+                  ><img
+                    class="rounded"
+                    class=""
+                    src="./movies/ozark.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/mysteries.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/alive.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/bird-box.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/eddy.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/dark.jpg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 			</div>
 
 			<h3 class="text-white ml-2 mt-5 mb-3">Watch it again</h3>
-			<div class="row no-gutters">
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="./movies/dark.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/bird-box.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/orange.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/whispers.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/re.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/ozark.jpg" />
-				</div>
+			<div class="row no-gutters text-center">
+        <div
+        id="carouselExampleControls2"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/witcher.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/ozark.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/Killer.jpeg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/mysteries.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/punisher.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/power.jpg"/>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 col-sm-6 col-lg-2">
+                <a href="#"
+                  ><img
+                    class="rounded"
+                    class=""
+                    src="./movies/ozark.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/mysteries.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/alive.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/bird-box.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/eddy.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/dark.jpg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls2"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls2"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 			</div>
 
 			<h3 class="text-white ml-2 mt-5 mb-3">New Realeases</h3>
-			<div class="row no-gutters row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-4">
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/umbrella.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/mysteries.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/Unorthodox.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/cursed.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/eddy.jpg" />
-				</div>
-				<div class="col col-12 col-md-6 col-lg-2 mb-3 px-1">
-					<img class="img-fluid rounded" src="movies/Killer.jpeg" />
-				</div>
+			<div class="row no-gutters text-center">
+        <div
+        id="carouselExampleControls3"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/Unorthodox.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/witcher.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/orange.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/papel.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/re.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/punisher.jpg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 col-sm-6 col-lg-2">
+                <a href="#"
+                  ><img
+                    class="rounded"
+                    class=""
+                    src="./movies/ozark.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/mysteries.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/alive.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/bird-box.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/eddy.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-2 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="./movies/dark.jpg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls3"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls3"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 			</div>
     </main>
-    <footer>
-      <div class="row  no-gutters mt-5 mb-0" >
+    <footer >
+      <div class="row no-gutters mt-5 mb-0" >
         <div class="col col-6 offset-3">
           <div class="row no-gutters offset-3 px-4" style="color: grey;">
             <a href="#">
@@ -189,7 +428,7 @@
           </div>
         </div>
       </div>
-        <div class="row  no-gutters mt-2 mb-2" >
+        <div class="row no-gutters mt-2 mb-2" >
           <div class="col col-6 offset-3">
             <div class="row no-gutters offset-3 px-4" style="color: grey;">
               <div class="col col-12 col-md-6 col-lg-2 col-xl-3">Audio and Subtitles</div>
@@ -227,6 +466,11 @@
           </div>
         </div>
     </footer>
+
+    <script>
+      
+    
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

@@ -22,7 +22,7 @@
     <div class="container">
       <h1 class="text-center mt-5">StrivyZone</h1>
       <nav class="navbar navbar-expand-lg flex-column navbar-dark rounded-lg mb-4">
-        <h2 class="navbar-brand p-2 mx-auto rounded" style="background: rgb(64, 66, 64);font-weight: 400; color: rgb(218, 218, 218);"">Product Creator</h2>
+        <h2 class="navbar-brand p-2 mx-auto rounded" style="background: rgb(64, 66, 64);font-weight: 400; color: rgb(218, 218, 218);"">Creat New Product</h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -129,13 +129,42 @@
     <script>
       
         const url = "https://striveschool-api.herokuapp.com/api/product/";
-        let headers =
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiYzVlYTRiY2RlMTAwMTc2MTZhOGQiLCJpYXQiOjE2MDUwOTI5NDEsImV4cCI6MTYwNjMwMjU0MX0.yM5ilF18yFseyuaWHUCTbZk6hDO2E6hPL51E2HPsP-0";
+        let headers = {
+        "Content-Type": "application/json",
+        Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiYzVlYTRiY2RlMTAwMTc2MTZhOGQiLCJpYXQiOjE2MDUwOTI5NDEsImV4cCI6MTYwNjMwMjU0MX0.yM5ilF18yFseyuaWHUCTbZk6hDO2E6hPL51E2HPsP-0",
+      };
 
           const handleSubmit = (event) => {
              event.preventDefault();
              submitProduct();
       };
+
+      let id = null
+      let response = null
+
+      window.onload = async () => {
+        let urlPar = new URLSearchParams(window.location.search)
+        id = urlPar.get("id")
+
+        if(id) {
+          let headers = {
+        "Content-type": "application/json",
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiYzVlYTRiY2RlMTAwMTc2MTZhOGQiLCJpYXQiOjE2MDUwOTI5NDEsImV4cCI6MTYwNjMwMjU0MX0.yM5ilF18yFseyuaWHUCTbZk6hDO2E6hPL51E2HPsP-0",
+      };
+          response = await fetch(url + id,{headers})
+          let obj = await response.json()
+          
+          document.getElementById("product-name").value = obj.name
+          document.getElementById("product-description").value = obj.description
+          document.getElementById("product-brand").value = obj.brand
+          document.getElementById("product-price").value = obj.price
+          document.getElementById("image-url").value = obj.imageUrl
+        }
+      }
+        
+
 
         const submitProduct = async () => {
           let spinner = document.getElementById('spinner')
@@ -151,23 +180,33 @@
           
 
         try {
-          let response = await fetch(url, {
+         
+          if(!id) {
+           response = await fetch(url, {
             method: "POST",
             body: JSON.stringify(myProducts),
-            headers: new Headers({ Authorization: headers, "Content-type": "application/json" }), 
+            headers: headers, 
           });
           
-          
+          } else {
+            response = await fetch(url + id, {
+              method: "PUT",
+            body: JSON.stringify(myProducts),
+            headers: headers, 
+            } )
+          }
           if (response.ok) {
-            alert("Product created!")   
+            spinner.classList.toggle("d-none")
+            alert(`Product ${id ? "updated!" : "Created!"}`)   
             location.assign("index.html")       
           } else {
             console.log("Something went wrong!");
           }
-        } catch (error) {
+         } catch (error) {
           console.log(error);
+         }
         }
-      }
+      
     
         
       
