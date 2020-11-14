@@ -16,48 +16,84 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <title>Netflix - Backoffice</title>
   </head>
   <body
     style="
-      background-color: rgb(223, 223, 215);
-      background-image: url(./bg/netflix-background.jpg);
-      background-repeat: no-repeat;
-      object-fit: cover;
+      background: rgb(70, 70, 70);
+      background: linear-gradient(
+        162deg,
+        rgba(70, 70, 70, 1) 0%,
+        rgba(18, 18, 18, 1) 40%
+      );
     "
+    ;
   >
     <div id="movie-container" class="container-lg mx-auto text-center">
-      <h1>Welcome to Netfix</h1>
+      <h1 style="color: rgb(241, 75, 75)">Welcome to Netfix</h1>
     </div>
     <script>
+      let headers = {
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFlOGIzZTA1NzIzZTAwMTdjMTYwYTIiLCJpYXQiOjE2MDUyNzQ0MzEsImV4cCI6MTYwNjQ4NDAzMX0.M4q-b4Jc-FwRlgODUiCrcyI8-t0i9a7euebzX-FLwYY",
+        "Content-Type": "application/json",
+      };
+      let id = null;
+      let response = null;
+      let url = "https://striveschool-api.herokuapp.com/api/movies/Comedy";
+
       window.onload = async () => {
+        let urlParams = new URLSearchParams(window.location.search);
+        id = urlParams.get("id");
         try {
-          let response = await fetch(
-            "https://striveschool-api.herokuapp.com/api/movies/",
-            {
-              method: "GET",
-              headers: {
-                Authorization:
-                  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFlOGIzZTA1NzIzZTAwMTdjMTYwYTIiLCJpYXQiOjE2MDUyNzQ0MzEsImV4cCI6MTYwNjQ4NDAzMX0.M4q-b4Jc-FwRlgODUiCrcyI8-t0i9a7euebzX-FLwYY",
-              },
-            }
-          );
+          response = await fetch(url, {
+            method: "GET",
+            headers,
+          });
           let movies = await response.json();
-          if (movies > 0) {
-            movies.forEach((movie) => {
-              let container = document.getElementById("movie-container");
-              let newMovie = `<div>
-                             <h4> ${movie.name} </h4> 
-                             <img src=" ${movie.imageUrl} " alt="image" />
-                             <p> ${movie.description} </p> 
-                             <p> ${movie.category} </p>
-                             </div>`;
-              newMovie.innerHTML += newMovie;
-            });
+          console.log(movies);
+          movies.forEach((movie) => {
+            let category = movie.category;
+            let container = document.getElementById("movie-container");
+            let newMovie = `<h4 class="text-left mt-5 mb-n5"> ${movie.name} </h4>
+                            <h6 class="text-left mt-5 mb-n5"> ${movie.category} </h6>
+                            <div class="d-flex" style="color: white; margin-top: 8rem">
+                             <img style="width: 30%; height: 30%;" src=" ${movie.imageUrl} " alt="image" />
+                             <p class="ml-5"> ${movie.description} </p>
+                             </div>
+                             <button onclick="editMovie()" class="btn btn-edit mt-5"><i class="fas fa-edit"></i></button>
+                             <button onclick="deleteMovie()" class="btn btn-delete mt-5"><i class="fas fa-trash-alt"></i></button>
+                             <hr style="background-color: red; width: 30%;" class="mx-auto" />`;
+            document.querySelector("#movie-container").innerHTML += newMovie;
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      const editMovie = () => {
+        location.href = "backoffice.html?id=" + id;
+      };
+
+      const deleteMovie = async () => {
+        try {
+          response = await fetch(url + id, {
+            method: "DELETE",
+            headers: headers,
+          });
+
+          if (response.ok) {
+            alert("Movie deleted!");
+            location.assign("movieDetails.html");
           } else {
-            alert("Something went wrong");
-            location.assign("backoffice.html");
+            alert("Something went wrong!");
           }
         } catch (error) {
           console.log(error);
