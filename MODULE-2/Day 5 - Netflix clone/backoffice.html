@@ -66,10 +66,9 @@
     </div>
 
     <script>
-      const url = "https://striveschool-api.herokuapp.com/api/movies/";
+      const url = "https://striveschool-api.herokuapp.com/api/movies/Action";
       let id;
       let response;
-
       const handleSubmit = (event) => {
         event.preventDefault();
         submitMovie();
@@ -87,7 +86,6 @@
           };
           response = await fetch(url + id, { headers });
           let obj = await response.json();
-
           document.getElementById("title").value = obj.name;
           document.getElementById("genre").value = obj.category;
           document.getElementById("trama").value = obj.description;
@@ -125,8 +123,8 @@
               },
             });
           }
+
           if (response.ok) {
-            console.log(response);
             alert("Request Sent!");
             location.assign("movieDetails.html");
           } else {

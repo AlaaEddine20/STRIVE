@@ -45,21 +45,23 @@
           "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFlOGIzZTA1NzIzZTAwMTdjMTYwYTIiLCJpYXQiOjE2MDUyNzQ0MzEsImV4cCI6MTYwNjQ4NDAzMX0.M4q-b4Jc-FwRlgODUiCrcyI8-t0i9a7euebzX-FLwYY",
         "Content-Type": "application/json",
       };
-      let id = null;
-      let response = null;
+      let id;
+      let response;
       let url = "https://striveschool-api.herokuapp.com/api/movies/Action";
 
       window.onload = async () => {
         let urlParams = new URLSearchParams(window.location.search);
         id = urlParams.get("id");
+        console.log(id);
         try {
           response = await fetch(url, {
             method: "GET",
             headers,
           });
           let movies = await response.json();
-          console.log(movies);
+
           movies.forEach((movie) => {
+            console.log(movie);
             let category = movie.category;
             let container = document.getElementById("movie-container");
             let newMovie = `<h4 class="text-left mt-5 mb-n5"> ${movie.name} </h4>
