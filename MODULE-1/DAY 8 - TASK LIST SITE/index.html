@@ -114,9 +114,10 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
             */
       function removeLast() {
         let list = document.getElementById("myTasklist");
-        let listItems = list.lastElementChild;
-        list.removeChild(lastItems);
+        console.log(list);
+        list.removeChild(list.lastChild);
       }
+      removeLast();
       /* EXERCISE 7:
                 Create a method "removeFirst" which removes the first item from the task list
             */
