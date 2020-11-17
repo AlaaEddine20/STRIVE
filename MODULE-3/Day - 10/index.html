@@ -104,7 +104,7 @@
         <button class="dropdown-item" type="button">Drama</button>
         <button class="dropdown-item" type="button">Horror</button>
       </div></span></h4>
-			<h3 class="mt-4 text-white ml-2 mt-5 mb-3">Trending Now</h3>
+			<h3 class="mt-4 text-white ml-2 mt-5 mb-3"></h3>
 			<div class="row no-gutters text-center">
         <div
         id="carouselExampleControls"
@@ -113,11 +113,15 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4 col-sm-6 col-lg-2 mx-n2">
+            <div class="row trending">
+              <!--<div class="col-md-4 col-sm-6 col-lg-2 mx-n2">
                 <a href="#"
                   ><img class="rounded" src="./movies/Unorthodox.jpg" alt=""
                 /></a>
+                <div class="buttons-container d-flex">
+                  <button class="btn btn-block btn-edit my-auto"> Edit </button>
+                  <button class="btn btn-block btn-delete my-auto"> Delete </button>
+                </div>
               </div>
               <div class="col-md-4 col-sm-6 col-lg-2 mx-n2">
                 <a href="#"
@@ -143,10 +147,10 @@
                 <a href="#"
                   ><img class="rounded" src="./movies/punisher.jpg" alt=""
                 /></a>
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="carousel-item">
+         <!--  <div class="carousel-item">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-lg-2">
                 <a href="#"
@@ -183,7 +187,7 @@
                 /></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <a
           class="carousel-control-prev"
@@ -214,7 +218,7 @@
         data-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <!-- <div class="carousel-item active">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-lg-2 mx-n2">
                 <a href="#"
@@ -284,7 +288,7 @@
                 /></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <a
           class="carousel-control-prev"
@@ -315,7 +319,7 @@
         data-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+         <!--  <div class="carousel-item active">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-lg-2 mx-n2">
                 <a href="#"
@@ -386,7 +390,7 @@
                 /></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <a
           class="carousel-control-prev"
@@ -469,7 +473,68 @@
 
     <script>
       
-    
+      let headers = {
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFlOGIzZTA1NzIzZTAwMTdjMTYwYTIiLCJpYXQiOjE2MDUyNzQ0MzEsImV4cCI6MTYwNjQ4NDAzMX0.M4q-b4Jc-FwRlgODUiCrcyI8-t0i9a7euebzX-FLwYY",
+        "Content-Type": "application/json",
+      };
+      let id;
+      let response;
+      let url = "https://striveschool-api.herokuapp.com/api/movies/";
+
+      window.onload = async () => {
+        let urlParams = new URLSearchParams(window.location.search);
+        id = urlParams.get("id");
+
+        try {
+          response = await fetch(url, {
+            method: "GET",
+            headers,
+          });
+          let movies = await response.json();
+
+          movies.forEach((movie) => {
+            let category = movie.category;
+            document.querySelector('h3').textContent = category
+            let carouselItem = document.querySelector(".trending")
+            let newMovie = `<div class="col-md-4 col-sm-6 col-lg-2 mx-n2">
+                <a href="#"
+                  ><img class="rounded" src="${movie.imageUrl}" alt=""
+                /></a>
+                <div class="buttons-container d-flex">
+                  <button class="btn btn-block btn-edit my-auto"> Edit </button>
+                  <button class="btn btn-block btn-delete my-auto"> Delete </button>
+                </div>
+              </div>`;
+            carouselItem.innerHTML += newMovie
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      const editMovie = () => {
+        location.href = "backoffice.html?id=" + id;
+      };
+
+      const deleteMovie = async () => {
+        try {
+          response = await fetch(url + id, {
+            method: "DELETE",
+            headers: headers,
+          });
+
+          if (response.ok) {
+            alert("Movie deleted!");
+            location.assign("movieDetails.html");
+          } else {
+            alert("Something went wrong!");
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
     </script>
 
     <script
