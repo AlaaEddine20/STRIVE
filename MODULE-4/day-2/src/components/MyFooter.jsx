@@ -6,7 +6,7 @@ import { Card } from 'react-bootstrap'
 const myFooter = () => {
 
 return (
-    <Card className="ext-white" style={{ height: 130, backgroundColor: '#3f7cac'}}>
+    <Card className="ext-white" style={{ height: 130, backgroundColor: '#3f7cac' }}>
         
         <Card.ImgOverlay>
           <Card.Title>Footer</Card.Title>
