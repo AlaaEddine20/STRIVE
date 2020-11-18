@@ -1,8 +1,33 @@
 import React from 'react'
-import { Container, Row, Jumbotron, Card, } from 'react-bootstrap'
-import books from '../data/scifi.json';
+import { Container, Row, Jumbotron, Card, DropdownButton, Dropdown, InputGroup } from 'react-bootstrap'
+import fantasy from '../data/fantasy.json'
+import history from '../data/history.json'
+import horror from '../data/horror.json'
+import romance from '../data/romance.json'
+import scifi from '../data/scifi.json'
+
+let booksCategory = ["fantasy", "history", "horror", "romance", "scifi"]
+
+let books = {
+  fantasy,
+  history,
+  horror, 
+  romance,
+  scifi,
+}
 
 class Home extends React.Component {
+
+  state = {
+    books: books.fantasy,
+    selectedCategory: "fantasy"
+  }
+
+  handleDropdown = (category) => {
+    this.setState({ books: books[category], selectedCategory: category})
+    console.log(books.[category])
+  }
+
     render() {
         return (
         
@@ -16,18 +41,26 @@ class Home extends React.Component {
                         </p>
                      </Container>
                     </Jumbotron> 
-                  <Row className="d-flex justify-content-center">
-                  
 
-                    {books.map((book) => (
-                       
-                     <Card style={{ backgroundColor: '#6ea4bf', height: 600, width: 500 }}>
-                       <Card.Body>
-                         <Card.Text>
-                           <h3>{book.title}</h3>
-                         </Card.Text>
-                       </Card.Body>
-                        <Card.Img src={book.img} style={{ width: 300, height: 400 }} className="mx-auto my-5" />
+                   
+                      <DropdownButton
+                      as={InputGroup.Prepend}
+                      id="dropdown-basic-button"
+                      title={this.state.selectedCategory}>
+                       {booksCategory.map((category, index) => (
+                        <Dropdown.Item href="#/action-1" key={`dropdown-item-${index}`} onClick={() => this.handleDropdown(category)}>
+                           {category}
+                        </Dropdown.Item>
+                    )
+                    )}
+                     </DropdownButton>
+                   
+
+                  <Row className="d-flex justify-content-center">
+                    {fantasy.map((book) => (   
+                     <Card className="mx-3 mb-5" style={{ backgroundColor: 'black', height: 570, width: 310 }}>
+                        <h3 style={{ color: 'white', fontSize: '1.2rem' }}>{book.title}</h3>
+                        <Card.Img src={book.img} style={{ width: 300, height: 470, objectFit: 'cover' }} className="mx-auto my-auto" />
                      </Card> 
                     ))}
               
