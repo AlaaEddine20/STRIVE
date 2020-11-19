@@ -2,7 +2,6 @@ import React from 'react'
 import books from '../data/horror.json'
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import SingleBook from './SingleBook';
-import { propTypes } from 'react-bootstrap/esm/Image';
 
 const BookList = () => {
   
