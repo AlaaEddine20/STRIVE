@@ -7,13 +7,15 @@ import BookList from './components/BookList'
 import SingleBook from './components/SingleBook'
 
 class App extends React.Component {
+
+  
   render() {
 
     return (
       <div>
         <WarningSign text="WarningSign Text Content" />
         <MyBadge text="MyBadge Text Content" style={{ color: 'red' }} />
-        <SingleBook book={props} />
+       
         <BookList />
       </div>
       

@@ -1,30 +1,25 @@
 import React from 'react'
 import books from '../data/horror.json'
 import { Card, Container, Row, Col } from 'react-bootstrap';
+import SingleBook from './SingleBook';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
 const BookList = () => {
+  
     return (
-        
-            <Card>
-                {books.map((props,key) => {
+      <Container>
+          <Row>
+                {books.map((book,key) => {
                    
                     return (
-                        <Container key={key}>
-                        <Row>
-                          <Col>
-                           <Card.Title><h1>{props.title}</h1></Card.Title>
-                            <Card.Body>
-                                <h4>{props.category}</h4>
-                              <Card.Img src={props.img} style={{ width: 400, height: 500 }} />
-                            </Card.Body>
-                          </Col>
-                        </Row>
-                        </Container>
+
+                         <SingleBook data={book} key={key}  /> 
+                       
                     )
                 }
                 )}
-            </Card>
-        
+         </Row>
+         </Container>
     )
 }
 
