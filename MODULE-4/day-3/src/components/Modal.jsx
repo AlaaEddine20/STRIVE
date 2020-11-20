@@ -23,7 +23,7 @@ class Example extends React.Component {
 
         <Modal show={this.state.show}>
           <Modal.Header closeButton>
-            <Modal.Title>Hello</Modal.Title>
+            <Modal.Title>{this.props.data.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>Modal body</Modal.Body>
           <Modal.Footer>
@@ -35,7 +35,7 @@ class Example extends React.Component {
             >
               Close
             </Button>
-            <Button variant="primary">Save Changes</Button>
+            <Button variant="primary">Sumbit Comment</Button>
           </Modal.Footer>
         </Modal>
       </>
