@@ -12,7 +12,7 @@ class App extends React.Component {
       <div>
         <WarningSign text="WarningSign Text Content" />
         <MyBadge text="MyBadge Text Content" style={{ color: 'red' }} />
-        <SingleBook />
+        <BookList books={book} />
       </div>
       
     );
