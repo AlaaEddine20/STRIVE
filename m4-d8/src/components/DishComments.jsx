@@ -3,7 +3,6 @@ import { Container, ListGroup, Alert, Badge } from "react-bootstrap";
 
 class DishComments extends React.Component {
   render() {
-    console.log(this.props.selectedDish.comments);
     return (
       <Container>
         {this.props.selectedDish ? (

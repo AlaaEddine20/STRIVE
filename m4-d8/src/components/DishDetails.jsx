@@ -10,7 +10,7 @@ class DishDetails extends React.Component {
 
   componentDidMount() {
     setTimeout(() => {
-      console.log("Dish loaded succesfully");
+      console.log("Dish loaded");
     }, 1000);
     let dishIdFromTheSearchBar = this.props.match.params.stefano;
     let correctDishToLoad = allTheDishes.find(
