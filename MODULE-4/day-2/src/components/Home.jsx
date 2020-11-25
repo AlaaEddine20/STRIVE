@@ -2,6 +2,7 @@ import React from "react";
 import {
   Container,
   Row,
+  Col,
   Jumbotron,
   Card,
   DropdownButton,
@@ -13,6 +14,8 @@ import history from "../data/history.json";
 import horror from "../data/horror.json";
 import romance from "../data/romance.json";
 import scifi from "../data/scifi.json";
+
+import Comments from "./Comments";
 
 let booksCategory = ["fantasy", "history", "horror", "romance", "scifi"];
 
@@ -68,23 +71,29 @@ class Home extends React.Component {
             ))}
           </DropdownButton>
 
-          <Row className="d-flex justify-content-center">
-            {this.state.books.map((book, key) => (
-              <Card
-                key={key}
-                className="mx-3 mb-5"
-                style={{ backgroundColor: "black", height: 570, width: 310 }}
-              >
-                <h3 style={{ color: "white", fontSize: "1.2rem" }}>
-                  {book.title}
-                </h3>
-                <Card.Img
-                  src={book.img}
-                  style={{ width: 300, height: 470, objectFit: "cover" }}
-                  className="mx-auto my-auto"
-                />
-              </Card>
-            ))}
+          <Row className="d-flex justify-content-center w-100">
+            <Col xs={8}>
+              {this.state.books.map((book, key) => (
+                <Card
+                  key={key}
+                  className="mx-3 mb-5"
+                  style={{ backgroundColor: "black", height: 570, width: 310 }}
+                >
+                  <h3 style={{ color: "white", fontSize: "1.2rem" }}>
+                    {book.title}
+                  </h3>
+                  <Card.Img
+                    src={book.img}
+                    style={{ width: 300, height: 470, objectFit: "cover" }}
+                    className="mx-auto my-auto"
+                    onClick={() => this.setState({ selectedBook: book })}
+                  />
+                </Card>
+              ))}
+            </Col>
+            <Col>
+              <Comments book={this.state.selectedBook} />
+            </Col>
           </Row>
         </Row>
       </Container>

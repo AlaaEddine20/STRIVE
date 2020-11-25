@@ -9,7 +9,11 @@ import romance from "../books/romance.json";
 
 class SingleBook extends React.Component {
   state = {
-    books: [],
+    book: [],
+  };
+
+  componentDidMount = () => {
+    this.setState({ book: book });
   };
 
   render() {
@@ -18,8 +22,7 @@ class SingleBook extends React.Component {
         <Card>
           <Card.Img variant="top" src="holder.js/100px160" />
           <Card.Body>
-            <Card.Title>{books.title}</Card.Title>
-            <Card.Text></Card.Text>
+            <Card.Title>{book.title}</Card.Title>
           </Card.Body>
         </Card>
       </Container>

@@ -8,7 +8,7 @@ class BookList extends React.Component {
     return (
       <Container>
         {}
-        <SingleBook />
+        <SingleBook item={book} />
       </Container>
     );
   }
