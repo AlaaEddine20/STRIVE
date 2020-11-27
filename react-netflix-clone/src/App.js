@@ -1,12 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import Home from './components/Home';
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <>
+      <Router>
+        <Home exact path='/' />
+      </Router>
+      </>
+    );
+
+  }
 }
 
 export default App;
