@@ -1,5 +1,0 @@
-let namesArr = [];
-let teams = {};
-
-
-

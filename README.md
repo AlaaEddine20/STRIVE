@@ -1,1 +1,0 @@
-# STRIVE---MODULE-1
