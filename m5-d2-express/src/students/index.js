@@ -10,8 +10,8 @@ const path = require("path")// questo mi serve per poter creare un path relativo
 router.get("/", (req, res) => {
     //ho assegnato la variabile path che mi consente di usare __dirname, con il metodo path concateno __dirname con il mio file json
     const studentsFilePath = path.join(__dirname, "students.json")
-    //a)prendo la lista di studenti dal file su disco (students.json)
-
+    //a)prendo la lista di studenti dal file su disco (students.json).
+    
     //b)devo inviare la lista come response
 
     //faccio il test con postman per vedere se ricevo una response
