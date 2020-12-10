@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>GoG</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse px-5 mx-5 justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <a style="width: 2%; height: 2%" class="navbar-brand mr-5" href="#"
+              ><svg viewBox="0 0 32 32" class="menu__logo-icon">
+                <use xlink:href="#icon-logo-gog"></use>
+                <svg
+                  preserveAspectRatio="xMidYMax meet"
+                  viewBox="0 0 34 31"
+                  id="icon-logo-gog"
+                >
+                  <path
+                    class="cls-1"
+                    d="M31,31H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0H31a3,3,0,0,1,3,3V28A3,3,0,0,1,31,31ZM4,24.5A1.5,1.5,0,0,0,5.5,26H11V24H6.5a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5H11V18H5.5A1.5,1.5,0,0,0,4,19.5Zm8-18A1.5,1.5,0,0,0,10.5,5h-5A1.5,1.5,0,0,0,4,6.5v5A1.5,1.5,0,0,0,5.5,13H9V11H6.5a.5.5,0,0,1-.5-.5v-3A.5.5,0,0,1,6.5,7h3a.5.5,0,0,1,.5.5v6a.5.5,0,0,1-.5.5H4v2h6.5A1.5,1.5,0,0,0,12,14.5Zm0,13v5A1.5,1.5,0,0,0,13.5,26h5A1.5,1.5,0,0,0,20,24.5v-5A1.5,1.5,0,0,0,18.5,18h-5A1.5,1.5,0,0,0,12,19.5Zm9-13A1.5,1.5,0,0,0,19.5,5h-5A1.5,1.5,0,0,0,13,6.5v5A1.5,1.5,0,0,0,14.5,13h5A1.5,1.5,0,0,0,21,11.5Zm9,0A1.5,1.5,0,0,0,28.5,5h-5A1.5,1.5,0,0,0,22,6.5v5A1.5,1.5,0,0,0,23.5,13H27V11H24.5a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5h3a.5.5,0,0,1,.5.5v6a.5.5,0,0,1-.5.5H22v2h6.5A1.5,1.5,0,0,0,30,14.5ZM30,18H22.5A1.5,1.5,0,0,0,21,19.5V26h2V20.5a.5.5,0,0,1,.5-.5h1v6h2V20H28v6h2ZM18.5,11h-3a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.5-.5h3a.5.5,0,0,1,.5.5v3A.5.5,0,0,1,18.5,11Zm-4,9h3a.5.5,0,0,1,.5.5v3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,1-.5-.5v-3A.5.5,0,0,1,14.5,20Z"
+                  ></path>
+                </svg></svg
+            ></a>
+            <ul class="navbar-nav py-3">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  STORE
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  ABOUT
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  COMMUNITY
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  SUPPORT
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  SIGN IN
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <div id="icon-container">
+              <a href="#">
+                <img
+                  style="width: 40%"
+                  id="shopping-icon"
+                  src="./gog-img/checkout-icon.png"
+                  alt=""
+                />0
+              </a>
+              <a href="#">
+                <img
+                  id="search-icon"
+                  style="width: 85%"
+                  src="./gog-img/search-icon.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="main-container" class="container-lg">
+        <div class="section-title">
+          <div class="section-title__icon-wrapper">
+            <img
+              id="pen-icon"
+              src="./gog-img/pen-icon.png"
+              alt=""
+              style="width: 1.5%"
+            /><span class="section-titles ml-2">Highlights</span>
+          </div>
+        </div>
+        <hr />
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./gog-img/carousel1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./gog-img/carousel2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./gog-img/carousel3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./gog-img/carousel4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./gog-img/carousel5.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./gog-img/carousel6.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div id="cards-top" class="row mt-5">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card rounded-0" style="width: 16rem">
+              <img
+                src="./gog-img/tile (9).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Baldur's gate II</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card rounded-0" style="width: 16rem">
+              <img
+                src="./gog-img/tile (6).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Disco Elysium</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card rounded-0" style="width: 16rem">
+              <img
+                src="./gog-img/tile (12).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">DarkQuest II</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card rounded-0" style="width: 16rem">
+              <img
+                src="./gog-img/tile (13).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Wolfeinstein DLC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5">
+        <hr />
+        <div class="we-are container-lg mt-2 mb-n3">
+          <div class="row">
+            <div class="col-lg-9">
+              <p style="font-size: 0.9rem">
+                We are GOG.COM, the <span>DRM-free</span> home for a
+                <span>curated selection</span> of games. This place was
+                <span>made for gamers,</span> so make yourself at home
+              </p>
+            </div>
+            <div id="goc" class="col-3 mt-1">
+              <img
+                style="width: 6%"
+                src="./gog-img/gog-circle.png"
+                alt=""
+              /><span class="cog-galaxy ml-2">The new GOC GALAXY 2.0</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-----------------------------NOW ON SALE---------------------------->
+        <div class="container-lg mb-5">
+          <nav id="now-on-sale-nav" class="navbar navbar-expand-lg">
+            <div class="section-title">
+              <div class="section-title__icon-wrapper">
+                <img
+                  id="pen-icon"
+                  src="./gog-img/"
+                  alt=""
+                  style="width: 1.5%"
+                /><span class="section-titles ml-2">Now on sale</span>
+              </div>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center mb-n3"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav mb-3">
+                <li class="nav-item-2 active">
+                  <a class="nav-link" href="#"
+                    >Feature deals <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item-2">
+                  <a class="nav-link" href="#">Aquanox Deep Descent</a>
+                </li>
+                <li class="nav-item-2">
+                  <a class="nav-link" href="#">Weekly Sale</a>
+                </li>
+                <li class="nav-item-2">
+                  <a class="nav-link" href="#">Surviving Mars bundle</a>
+                </li>
+                <li class="nav-item-2 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <hr class="mb-4 mt-n1" />
+
+          <div class="row mx-auto">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#"><img src="https://place-hold.it/230x400" alt="" /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#"><img src="https://place-hold.it/230x400" alt="" /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#"><img src="https://place-hold.it/230x400" alt="" /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#"><img src="https://place-hold.it/230x400" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg mt-5">
+          <div class="section-title__icon-wrapper">
+            <img
+              id="pen-icon"
+              src="./gog-img/"
+              alt=""
+              style="width: 1.5%"
+            /><span class="section-titles ml-2">What's good?</span>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (20).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <div class="card rounded-0">
+                    <img
+                      style="object-fit: contain"
+                      class="card-img-top"
+                      src="./gog-img/tile (21).jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mt-5">
+                  <div class="card rounded-0">
+                    <img
+                      style="object-fit: contain"
+                      class="card-img-top"
+                      src="./gog-img/tile (22).jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <div class="card rounded-0">
+                    <img
+                      style="object-fit: contain"
+                      class="card-img-top"
+                      src="./gog-img/tile (23).jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mt-5 mb-5">
+                  <div class="card rounded-0">
+                    <img
+                      style="object-fit: contain"
+                      class="card-img-top"
+                      src="./gog-img/tile (25).jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------RECOMMENDED FO YOU----------------------->
+        <div class="container-lg mt-5">
+          <div class="section-title__icon-wrapper">
+            <img
+              id="pen-icon"
+              src="./gog-img/"
+              alt=""
+              style="width: 1.5%"
+            /><span class="section-titles ml-2">Recommended for you</span>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (12).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (21).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (10).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (25).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (26).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0">
+                <img
+                  style="object-fit: contain"
+                  class="card-img-top"
+                  src="./gog-img/tile (34).jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7 container-lg mt-5">
+          <div class="section-title__icon-wrapper">
+            <img
+              id="pen-icon"
+              src="./gog-img/"
+              alt=""
+              style="width: 1.5%"
+            /><span class="section-titles ml-2">Discover games</span>
+          </div>
+          <div class="discover-nav"></div>
+          <div class="d-flex justify-content-end col-7 mt-n3">
+            <div id="nav-3" class="row">
+              <a class="mx-3" href="#">Bestselling </a>
+              <a class="mx-3" href="#">New</a>
+              <a class="mx-3" href="#">Upcoming</a>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n3">
+            <img
+              class="my-2"
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][958]69fc6e742826ff8c32caa1173d1bf0ea7dc399dd0228ca542d7c4fc58c60fb56_bs_background_800.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col">
+                <p style="font-weight: 600; font-size: 0.9rem">
+                  Cyberpunk 2077
+                </p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center">
+                  <p id="soon-icon">
+                    <span
+                      ><img
+                        id="calendar-icon"
+                        src="./gog-img/calendar.png"
+                        alt=""
+                        style="width: 25%; margin-right: 6%"
+                    /></span>
+                    SOON
+                  </p>
+                  <span
+                    ><img
+                      id="windows-icon-1"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%"
+                  /></span>
+                </div>
+                <div class="col-3">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%; height: 20%; display: flex"
+              src="./goc-images/[www.gog.com][937]e34b4189894110990510f1334151555bd1c0ed45926c5c8cbc7e9b80aa6744d1_product_tile_136.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center text-light"
+            >
+              <div class="col">
+                <p style="font-weight: 600; font-size: 0.9rem">The Witcher</p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n4">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+
+          <div class="row container-lg my-n1">
+            <img style="width: 15%" src="./gog-img/tile (34).jpg" alt="" />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">Blade runner</p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][260]e7c6ab0d300a11ed9195f0d8bf65954d042a2d4d405d99069edb3fbe3b1906c8_product_tile_536.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">Metal Gear</p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][949]b063c46a7e35ba1925653cefcea5014728f1cc0c54880b2f5978eff8f488e9d7_product_tile_136_2x.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">
+                  The outer worlds
+                </p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][921]1017356fe36345fcd47bcea5670420a40e1de5c593e5f98f7b9035920a12c149_product_tile_136.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: bold; font-size: 0.9rem">Caves of Qud</p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][868]d18b14716866d6edda0361a30661f25a4e326698561e03d3b5ac1ce15d97e884_product_tile_116_2x.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">
+                  Fallout New Vegas
+                </p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][868]d18b14716866d6edda0361a30661f25a4e326698561e03d3b5ac1ce15d97e884_product_tile_116_2x.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">
+                  Fallout New Vegas
+                </p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][868]d18b14716866d6edda0361a30661f25a4e326698561e03d3b5ac1ce15d97e884_product_tile_116_2x.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">
+                  Fallout New Vegas
+                </p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+          <div class="row container-lg my-n1">
+            <img
+              style="width: 15%"
+              src="./goc-images/[www.gog.com][868]d18b14716866d6edda0361a30661f25a4e326698561e03d3b5ac1ce15d97e884_product_tile_116_2x.jpg"
+              alt=""
+            />
+            <div
+              class="games-title row col-7 d-flex align-items-center mt-3 text-light"
+            >
+              <div class="col-3">
+                <p style="font-weight: 600; font-size: 0.9rem">
+                  Fallout New Vegas
+                </p>
+              </div>
+              <div class="row col-12 d-flex justify-content-between">
+                <div class="col-2 text-center mt-n3">
+                  <span
+                    ><img
+                      id="windows-icon"
+                      src="./gog-img/windows.png"
+                      alt=""
+                      style="width: 20%; display: flex"
+                  /></span>
+                </div>
+                <div class="col-3 mt-n5">
+                  <p style="font-weight: bold">€59.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 60%" />
+        </div>
+      </div>
+    </main>
+
+    <!--SCRIPTS-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

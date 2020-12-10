@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #40342c;
+  font-family: font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#navbar {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  height: 8vh;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-item-2 a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8b7464;
+}
+
+.nav-item-2 a:hover {
+  color: #a78975;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #746053;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: rgb(216, 214, 214) !important;
+}
+.nav-item a:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar-brand {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+  margin: 0 0 0.2rem 0;
+}
+
+.navbar-toggler {
+  background-color: grey !important;
+}
+
+.card {
+  background-color: #302823;
+  color: white;
+  font-size: 0.8rem;
+}
+
+#shopping-icon {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  color: grey;
+}
+
+#search-icon {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+}
+
+#icon-container {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+}
+#icon-container a {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+#main-container {
+  margin-top: 100px;
+}
+
+.d-block {
+  height: 460px;
+}
+
+.cog-galaxy {
+  color: darkmagenta;
+  font-weight: 600;
+}
+
+.section-titles {
+  color: white;
+  font-weight: 600;
+}
+
+#goc {
+  border-left: 1px solid grey;
+  margin-bottom: 1rem;
+}
+
+#soon-icon {
+  display: block;
+  background-color: rgb(3, 88, 114);
+  padding: 3px 4px;
+  color: white;
+  font-size: 65%;
+  font-weight: 600;
+}
+
+#calendar-icon {
+  filter: invert(80%);
+  -webkit-filter: invert(100%);
+}
+
+#windows-icon-1 {
+  filter: invert(50%);
+  -webkit-filter: invert(60%);
+  margin-left: 5rem;
+  margin-top: -5rem;
+}
+
+#windows-icon {
+  filter: invert(50%);
+  -webkit-filter: invert(60%);
+}
+
+#nav-3 a{
+  color: #b4927c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#nav-3 a:hover{
+  color: #cea589;
+  
+}

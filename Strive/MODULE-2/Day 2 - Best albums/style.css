@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    56deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(43, 33, 48, 1) 35%,
+    rgba(61, 70, 99, 1) 100%
+  );
+}
+h2 {
+  color: #8100b4;
+  font-family: "Sansita Swashed", cursive;
+  text-shadow: 4px 4px 5px #000000;
+}
+
+#navbar {
+  height: 8vh;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 2rem;
+}
+
+a.nav-link {
+  color: #ffffff !important;
+  text-shadow: 4px 4px #9202af;
+}
+
+a.nav-link:hover {
+  color: white !important;
+  font-weight: 600;
+}
+
+#jumbotron {
+  margin-top: 5%;
+  background-image: url(./images/jumbo.jpg);
+  background-position: bottom;
+  color: #f0efeb;
+  text-shadow: 4px 4px 5px #000000;
+  font-family: "Staatliches", cursive;
+  position: relative;
+}
+.subtitle {
+  font-size: 1.3rem;
+}
+
+#breadcrumb-wrapper {
+  margin-top: %;
+  margin-bottom: 10%;
+}
+
+.rounded-circle {
+  box-shadow: 2px 5px 20px rgb(110, 199, 199);
+  margin: 5% 0;
+}
+
+.featurette-image {
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px teal;
+}
+
+.lead {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 1.6rem;
+  color: #30a5d3;
+  box-shadow: 4px 4px 30px rgb(108, 39, 117);
+  border-radius: 1.5rem;
+  text-decoration-color: #26b9fd;
+  padding: 10px;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#first-blog {
+  display: flex;
+  flex-wrap: wrap;
+}
