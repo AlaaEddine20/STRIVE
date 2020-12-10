@@ -1,21 +1,17 @@
 const express = require("express")
-const fs = require("fs") 
 const path = require("path")
 const uniqid = require("uniqid")
 const { check, validationResult } = require("express-validator")
+const { readDB, writeDB } = require("../lib/fs-utilities")
 
 const router = express.Router()
 
-const readFile = fileName => {
-    const buffer = fs.readFileSync(path.join(__dirname, fileName))
-    const fileContent = buffer.toString()
-    return JSON.parse(fileContent)
-}
+const projectsJsonPath = path.join(__dirname, "projects.json")
 
-router.get("/", (req, res, next) => {
+router.get("/", async (req, res, next) => {
 
     try {
-        const projectsDB = readFile("projects.json")
+        const projectsDB = await readDB(projectsJsonPath)
 
         if (req.query && req.query.name) {
             const filteredProjects = projectsDB.filter(
@@ -32,9 +28,9 @@ router.get("/", (req, res, next) => {
     }
 })
 
-router.get("/:id", (req, res, next) => {
+router.get("/:id", async (req, res, next) => {
     try {
-        const projectsDB = readFile("projects.json")
+        const projectsDB = await readDB(projectsJsonPath)
         const project = projectsDB.filter(project => project.ID === req.params.id)
 
         let err;
@@ -65,19 +61,19 @@ router.post("/",
 
 
 
-(req, res, next) => {
+async (req, res, next) => {
     try {
-        const errors = validationResult(req)
+        const errors = await validationResult(req)
         
         if (!errors.isEmpty()) {
 
-            const err = new Error()
+            const err = await new Error()
             err.message =  errors
             err.httpStatusCode = 400
             next(err) 
         } else {
 
-            const projectsDB = readFile("projects.json")
+            const projectsDB = await readDB(projectsJsonPath)
             const newProject = {
                 ...req.body,
                 ID: uniqid(),
@@ -86,10 +82,7 @@ router.post("/",
             }
                 
             projectsDB.push(newProject)
-            fs.writeFileSync(
-            path.join(__dirname, "projects.json"),
-                    JSON.stringify(projectsDB)
-            )
+            await writeDB(projectsJsonPath, newProject)
             res.status(201).send(newProject)
         
             }
@@ -99,9 +92,9 @@ router.post("/",
    
 })
 
-router.put("/:id", (req, res, next) => {
+router.put("/:id", async (req, res, next) => {
     try {
-        const projectsDB = readFile("projects.json")
+        const projectsDB = await readDB(projectsJsonPath)
         const newDB = projectsDB.filter(project => project.ID !== req.params.id)
 
         const modifiedProject = {
@@ -111,7 +104,7 @@ router.put("/:id", (req, res, next) => {
         }
 
         newDB.push(modifiedProject)
-        fs.writeFileSync(path.join(__dirname, "projects.json"), JSON.stringify(newDB))
+        await writeDB(projectsJsonPath, newDB)
         
         res.send(modifiedProject)
 
@@ -119,11 +112,11 @@ router.put("/:id", (req, res, next) => {
         next(error)
     }
 })
-router.delete("/:id", (req, res, next) => {
+router.delete("/:id", async (req, res, next) => {
     try {
-        const projectsDB = readFile("projects.json")
+        const projectsDB = await readDB(projectsJsonPath)
         const newDB = projectsDB.filter(project => project.ID !== req.params.id)
-        fs.writeFileSync(path.join(__dirname, "projects.json"), JSON.stringify(newDB))
+        await writeDB(projectsJsonPath, newDB)
         
         res.status(204).send()
 

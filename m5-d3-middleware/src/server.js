@@ -1,6 +1,7 @@
 const express = require("express")
 const studentsRoutes = require("./students")
 const projectsRouter = require("./projects")
+const {join} = require("path")
 const {
     notFoundHandler,
     unauthorizedHandler,
@@ -11,13 +12,15 @@ const {
 
 const server = express()
 
-const port = process.env.PORT || 3005
+const port = process.env.PORT || 3005;
+const publicFolderPath = join(__dirname, "./public")
 
 const loggerMiddleware = (req, res, next) => {
     console.log(`Logged ${req.url} ${req.method} -- ${new Date()}`)
     next()
   }
 
+server.use(express.static(publicFolderPath))
 server.use(express.json())
 server.use(loggerMiddleware)
 
