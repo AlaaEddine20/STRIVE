@@ -164,7 +164,20 @@ booksRouter.post(
   }
 );
 
-booksRouter.delete("./:asin/comments", commetsValidation, async (req, res, next) => {
+booksRouter.get("/:asin/comments", async (req, res, next) => {
+  const books = await getBooks()
+  const bookIndex = books.find( book => book.asin === req.params.asin)
+
+  if (bookIndex) {
+    res.send(bookIndex.comments)
+  } else {
+    const error = new Error()
+    error.httpStatusCode = 404
+    next(err)
+  }
+})
+
+booksRouter.delete("./comments/id", commetsValidation, async (req, res, next) => {
   try {
     const books = await getBooks()
     const bookIndex = books.filter( book => book.asin !== req.params.asin)
