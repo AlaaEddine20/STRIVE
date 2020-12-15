@@ -5,21 +5,15 @@
     "img": "https://images-na.ssl-images-amazon.com/images/I/91xrEMcvmQL.jpg",
     "price": 7.81,
     "category": "scifi",
-    "comments": [
-      {
-        "UserName": "Alan111",
-        "Text": "test",
-        "CommentID": "3ee42gcogkiq5di6w",
-        "Date": "2020-12-15T15:35:12.727Z"
-      }
-    ]
+    "comments": []
   },
   {
     "asin": "0425264041",
     "title": "Shards of Hope (Psy-Changeling Novel, A)",
     "img": "https://images-na.ssl-images-amazon.com/images/I/91ku%2B0LppPL.jpg",
     "price": 7.59,
-    "category": "scifi"
+    "category": "scifi",
+    "comments": []
   },
   {
     "asin": "1250082757",

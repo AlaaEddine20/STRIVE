@@ -165,28 +165,45 @@ booksRouter.post(
 );
 
 booksRouter.get("/:asin/comments", async (req, res, next) => {
-  const books = await getBooks()
-  const bookIndex = books.find( book => book.asin === req.params.asin)
+  const books = await getBooks();
+  const bookIndex = books.find((book) => book.asin === req.params.asin);
 
   if (bookIndex) {
-    res.send(bookIndex.comments)
+    res.send(bookIndex.comments);
   } else {
-    const error = new Error()
-    error.httpStatusCode = 404
-    next(err)
+    const error = new Error();
+    error.httpStatusCode = 404;
+    next(err);
   }
-})
+});
 
-booksRouter.delete("./comments/id", commetsValidation, async (req, res, next) => {
-  try {
-    const books = await getBooks()
-    const bookIndex = books.filter( book => book.asin !== req.params.asin)
+booksRouter.delete(
+  "/:asin/comments/:commentID",
+  commetsValidation,
+  async (req, res, next) => {
+    try {
+      const books = await getBooks();
+      const bookIndex = books.findIndex(
+        (book) => book.asin === req.params.asin
+      );
 
-    await writeBooks(books)
-    res.statu(204).send()
-  } catch (error) {
-    next(error)
+      if (bookIndex !== -1) {
+        const filteredComments = books[bookIndex].comments.filter(
+          (comment) => comment.CommentID !== req.params.commentID
+        );
+        books[bookIndex].comments = filteredComments
+        await writeBooks(books)
+        res.status(204).send(books);
+      } else {
+        const error = new Error();
+        error.httpStatusCode = 404;
+        error.message = "Book not found!";
+        next(error);
+      }
+    } catch (error) {
+      next(error);
+    }
   }
-})
+);
 
 module.exports = booksRouter;
